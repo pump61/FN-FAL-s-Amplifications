@@ -37,7 +37,7 @@ public abstract class AbstractStaff extends SlimefunItem {
         this.staffTask = new StaffTask(getDefaultUsageKey(), this.getId());
         setConfigValues(maxUses, this.getItem().getType().toString());
         setMaterial();
-        Utils.setLoreByConfigValue(this.getItem(), this.getId(), "max-uses", "次", "&e", " 次", "staffs-settings");
+        Utils.setLoreByConfigValue(this.getItem(), this.getId(), "max-uses", "usos", "&e", " usos", "staffs-settings");
     }
 
     public void setMaterial(){
@@ -57,7 +57,7 @@ public abstract class AbstractStaff extends SlimefunItem {
             return true;
         }
 
-        player.sendMessage(Utils.colorTranslator("&c你没有权限在这里使用 " + staffName + "!"));
+        player.sendMessage(Utils.colorTranslator("&cVoce nao tem permissao para usar " + staffName + " aqui!"));
         return false;
     }
 

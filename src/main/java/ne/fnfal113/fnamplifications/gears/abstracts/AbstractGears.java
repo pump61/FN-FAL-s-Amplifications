@@ -174,7 +174,7 @@ public abstract class AbstractGears extends SlimefunItem {
                 }
             }
         } catch (NullPointerException | IllegalArgumentException e){
-            p.sendMessage(Utils.colorTranslator("&c添加额外装备附魔失败, 请联系你的服务器管理员检查并反馈问题"));
+            p.sendMessage(Utils.colorTranslator("&cFalha ao adicionar encantamento extra ao equipamento, contate um administrador do servidor"));
             e.printStackTrace();
         }
 
@@ -199,9 +199,9 @@ public abstract class AbstractGears extends SlimefunItem {
 
                 }
 
-                p.sendMessage(Utils.colorTranslator("&6FN 装备属性已更新!"));
+                p.sendMessage(Utils.colorTranslator("&6Atributos do equipamento FN atualizados!"));
             } catch (NullPointerException | IllegalArgumentException e){
-                p.sendMessage(Utils.colorTranslator("&c添加额外装备属性失败, 请联系你的服务器管理员检查并反馈问题"));
+                p.sendMessage(Utils.colorTranslator("&cFalha ao adicionar atributo extra ao equipamento, contate um administrador do servidor"));
                 e.printStackTrace();
             }
 

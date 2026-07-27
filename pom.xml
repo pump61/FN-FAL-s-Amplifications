@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.13.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
@@ -47,7 +47,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
+                <version>3.6.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -102,16 +102,16 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.StarWishsama</groupId>
+            <groupId>com.github.SlimefunGuguProject</groupId>
             <artifactId>Slimefun4</artifactId>
-            <version>2023.06</version>
+            <version>2025.1</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
+            <version>1.18.46</version>
             <scope>provided</scope>
         </dependency>
 

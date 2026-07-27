@@ -24,9 +24,9 @@ public class RegisterGems {
 
     private static final CustomItemStack anyUpgradeableGem = new CustomItemStack(
             Material.EMERALD,
-            "&d任意可升级宝石",
+            "&dQualquer gema aprimoravel",
             "",
-            "&e必须是相同等级的同种宝石"
+            "&eDeve ser uma gema do mesmo tipo e nivel"
     );
 
     private static final CustomItemStack anyUpgradedGem = new CustomItemStack(

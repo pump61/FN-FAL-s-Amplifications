@@ -31,7 +31,7 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在剑上"));
+            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada"));
         }
     }
 
@@ -44,9 +44,9 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
         if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
             event.setCancelled(true);
             event.getDamager().sendMessage(Utils
-                    .colorTranslator("&e你成功扰乱了敌人的守卫者, 它将不会生成"));
+                    .colorTranslator("&eVoce perturbou o guardiao do inimigo com sucesso, ele nao sera invocado"));
             event.getGuardianOwner().sendMessage(Utils
-                    .colorTranslator("&6你的守卫者已被攻击你的玩家扰乱, 守卫者将不会生成!"));
+                    .colorTranslator("&6Seu guardiao foi perturbado pelo jogador que te atacou, ele nao sera invocado!"));
             event.getGuardianOwner().playSound(event.getGuardianOwner().getLocation(), Sound.ENTITY_ZOMBIE_DEATH, 1.0F, 1.0F);
         }
     }

@@ -1,25 +1,25 @@
-# Boolean toggle whether you want to receive new updates everytime your server restart if a new update is released.
-# If set to "false" you will not receive new updates and need to manually update it yourself.
+# Alterna se voce quer receber notificacoes de novas atualizacoes toda vez que o servidor reiniciar, caso uma nova versao seja lancada.
+# Se definido como "false" voce nao recebera notificacoes de novas atualizacoes e precisara atualizar manualmente.
 auto-update: true
 
-# LiteXpansion items (iridium) will be used as recipes for FN PowerXpansion
-# This will only work if LiteXpansion is installed and value is set to true
+# Itens do LiteXpansion (iridio) serao usados como receitas para o FN PowerXpansion
+# So funciona se o LiteXpansion estiver instalado e o valor for true
 LiteX-Recipe-Integration: true
 
-# SimpleMaterialGenerators items as some recipes for FN Material Generators
-# Same as above, will only work if SMG is installed and value is set to true
+# Itens do SimpleMaterialGenerators como algumas receitas para os FN Material Generators
+# Mesma logica acima, so funciona se o SMG estiver instalado e o valor for true
 SMG-Recipe-Integration: true
 
-# Use 1.17 items (such as amethyst, copper, calcite, etc) as some recipes for FN Machinery Items
-# This will only work if server is running 1.17 and value is set to true
+# Usa itens da 1.17 (como ametista, cobre, calcita, etc) em algumas receitas dos itens de maquinario FN
+# So funciona se o servidor estiver rodando 1.17 e o valor for true
 New-Recipe-Integration: true
 
-# Armor effect validator, the time to update the armor effects in seconds (i.e FN Gears of Friction permanent effects)
-# For now the chestplate only has a permanent effect at level 30
+# Validador de efeito de armadura, o tempo em segundos para atualizar os efeitos da armadura (ex: efeitos permanentes do FN Gears of Friction)
+# Por enquanto apenas o peitoral possui um efeito permanente, a partir do nivel 30
 armor-update-period: 10
 
-# Enable or disable modules of the addon
-# Sub-categories will be removed from the guide upon disabling 
+# Ativa ou desativa modulos do addon
+# As subcategorias serao removidas do guia ao desativar
 Enable-Machineries: true
 Enable-Material-Generators: true
 Enable-Gems: true
@@ -31,9 +31,8 @@ Enable-Staffs: true
 Enable-Quivers: true
 Enable-Misc: true
 
-# Allow material generators to break over time
+# Permite que os geradores de materiais se danifiquem com o tempo
 Enable-Mat-Gen-Break-Over-Time: true
-# Allow material generators to drop broken variant only on block break
+# Permite que os geradores de materiais deixem cair a variante danificada apenas ao quebrar o bloco
 Enable-Mat-Gen-Broken-Drop: true
-
 

@@ -76,11 +76,11 @@ public class QuiverTask {
         if(itemState.getType() == Material.LEATHER) {
             meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "opened");
             itemState.setType(getArrowType().getType());
-            Utils.setLoreByPdc(itemState, meta, "打开", "状态: " ,"&e", "&f", " 箭袋");
+            Utils.setLoreByPdc(itemState, meta, "Aberto", "Status: " ,"&e", "&f", "");
         } else {
             meta.getPersistentDataContainer().set(getStorageKey3(), PersistentDataType.STRING, "closed");
             itemState.setType(Material.LEATHER);
-            Utils.setLoreByPdc(itemState, meta, "关闭", "状态: " ,"&e", "&f", " 箭袋");
+            Utils.setLoreByPdc(itemState, meta, "Fechado", "Status: " ,"&e", "&f", "");
         }
     }
 
@@ -105,11 +105,11 @@ public class QuiverTask {
                 meta.getPersistentDataContainer().remove(getStorageKey3());
             }
             itemState.setType(Material.LEATHER);
-            player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " 现在已清空");
-            Utils.setLoreByPdc(itemState, meta, "关闭 (无箭矢)", "状态: " ,"&e", "&f", "");
+            player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " agora esta vazia");
+            Utils.setLoreByPdc(itemState, meta, "Fechado (sem flechas)", "Status: " ,"&e", "&f", "");
         }
 
-        Utils.setLoreByPdc(itemState, meta, String.valueOf(amount), "箭矢剩余: " ,"&e", "&f", "");
+        Utils.setLoreByPdc(itemState, meta, String.valueOf(amount), "Flechas restantes: " ,"&e", "&f", "");
         player.getInventory().addItem(getArrowType().clone());
     }
 
@@ -124,7 +124,7 @@ public class QuiverTask {
             return;
         }
         if(item.getAmount() != 1){
-            player.sendMessage(Utils.colorTranslator("&e首次使用箭袋时不能堆叠箭袋"));
+            player.sendMessage(Utils.colorTranslator("&eA aljava nao pode ser empilhada ao ser usada pela primeira vez"));
             return;
         }
         int increment = arrowsCheckPDC + 1;
@@ -137,10 +137,10 @@ public class QuiverTask {
             } // pdc to make item un-stackable and unique
             item.setType(getArrowType().getType());
             arrow.setAmount(arrow.getAmount() - 1);
-            Utils.setLoreByPdc(item, meta, String.valueOf(increment), "箭矢剩余: " ,"&e", "&f", "");
-            Utils.setLoreByPdc(item, meta, "打开", "状态: " ,"&e", "&f", " 箭袋");
+            Utils.setLoreByPdc(item, meta, String.valueOf(increment), "Flechas restantes: " ,"&e", "&f", "");
+            Utils.setLoreByPdc(item, meta, "Aberto", "Status: " ,"&e", "&f", "");
             if(increment == getQuiverSize()){
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " is full!"));
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " esta cheia!"));
             }
 
         }
@@ -190,9 +190,9 @@ public class QuiverTask {
                     meta.getPersistentDataContainer().remove(getStorageKey3());
                 }
                 itemStack.setType(Material.LEATHER);
-                Utils.setLoreByPdc(itemStack, meta, "Closed (No arrows)", "状态: " ,"&e", "&f", "");
+                Utils.setLoreByPdc(itemStack, meta, "Fechado (sem flechas)", "Status: " ,"&e", "&f", "");
             }
-            Utils.setLoreByPdc(itemStack, meta, String.valueOf(decrement), "箭矢剩余: " ,"&e", "&f", "");
+            Utils.setLoreByPdc(itemStack, meta, String.valueOf(decrement), "Flechas restantes: " ,"&e", "&f", "");
         }
     }
 

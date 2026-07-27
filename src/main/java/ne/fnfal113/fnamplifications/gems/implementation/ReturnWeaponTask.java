@@ -73,8 +73,8 @@ public class ReturnWeaponTask extends BukkitRunnable {
         // drop the item if the distance between player and throwable is 150 blocks away
         if(distanceBetween(asLocation, pLocation) > 150){
             Location dropLoc = dropItem(asLocation);
-            getPlayer().sendMessage(Utils.colorTranslator("&c武器未能退还, 因为你离得太远了!"));
-            getPlayer().sendMessage(Utils.colorTranslator("&c它掉落在了坐标 &e" +
+            getPlayer().sendMessage(Utils.colorTranslator("&cA arma nao pode retornar, voce esta longe demais!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&cEla caiu nas coordenadas &e" +
                     "[" + (int) dropLoc.getX() + ", " + (int) dropLoc.getY() + ", " + (int) dropLoc.getZ()) + "]");
 
             stopTask();
@@ -82,7 +82,7 @@ public class ReturnWeaponTask extends BukkitRunnable {
 
         if(distanceBetween(asLocation, pLocation) < 0.5){
             if(getPlayer().getInventory().firstEmpty() == -1){
-                getPlayer().sendMessage(Utils.colorTranslator("&e你的背包已满! 武器将会掉落在地上"));
+                getPlayer().sendMessage(Utils.colorTranslator("&eSeu inventario esta cheio! A arma cairá no chao"));
                 dropItem(pLocation);
             } else {
                 getPlayer().getInventory().addItem(getItemStack().clone());

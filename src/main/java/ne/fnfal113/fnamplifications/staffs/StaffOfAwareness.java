@@ -47,7 +47,7 @@ public class StaffOfAwareness extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("50 格内的所有玩家");
+        bookMeta.setTitle("Jogadores num raio de 50 blocos");
         bookMeta.setAuthor("FN_FAL113");
 
         for (Entity entity: player.getWorld().getNearbyEntities(player.getLocation().clone(), 50, 50, 50)) {
@@ -60,8 +60,8 @@ public class StaffOfAwareness extends AbstractStaff {
         if(amount != 0) {
             playerMap.forEach((key1, value1) -> players.add(ChatColor.DARK_GREEN + value1));
 
-            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
-                    "法杖的力量让你获取到了 50 格内的玩家信息");
+            firstPage.add(ChatColor.GOLD + "  Cajado da Percepcao\n\n " + ChatColor.GRAY +
+                    "O poder do cajado revelou informacoes dos jogadores num raio de 50 blocos");
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < players.size(); i = i + 5) {
                 bookMeta.addPage(players.subList(i, Math.min(i + 5, players.size())).toString()
@@ -72,8 +72,8 @@ public class StaffOfAwareness extends AbstractStaff {
                         .replace("_", " "));
             }
         } else {
-            firstPage.add(ChatColor.GOLD + "  认知之杖\n\n " + ChatColor.GRAY +
-                    "附近似乎没有玩家");
+            firstPage.add(ChatColor.GOLD + "  Cajado da Percepcao\n\n " + ChatColor.GRAY +
+                    "Parece que nao ha jogadores por perto");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

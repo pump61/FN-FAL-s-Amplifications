@@ -57,7 +57,7 @@ public class BlockRotatorTask {
     public void onRightClick(Block block, Player player){
         if(!Slimefun.getProtectionManager().hasPermission(Bukkit.getOfflinePlayer(player.getUniqueId()),
                 player.getLocation(), Interaction.BREAK_BLOCK)){
-            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&e你没有权限旋转这个方块!"));
+            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&eVoce nao tem permissao para girar este bloco!"));
             return;
         }
         BlockData blockData = block.getBlockData();

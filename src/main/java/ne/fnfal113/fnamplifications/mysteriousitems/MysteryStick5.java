@@ -45,12 +45,12 @@ public class MysteryStick5 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "一根算计了生物的魔棒";
+        return ChatColor.GOLD + "Um bastao calculista para criaturas";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "我已经厌倦了那些棍子";
+        return ChatColor.WHITE + "Ja estou cansado desses bastoes";
     }
 
     @Override
@@ -71,7 +71,7 @@ public class MysteryStick5 extends AbstractStick {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 40, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
         }
 
     }

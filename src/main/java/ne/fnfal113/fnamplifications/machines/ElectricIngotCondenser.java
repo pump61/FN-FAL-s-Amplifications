@@ -48,10 +48,10 @@ public class ElectricIngotCondenser extends AContainer implements RecipeDisplayI
         for (MachineRecipe recipe : recipes) {
             displayRecipes.add(recipe.getInput()[0]);
             displayRecipes.add(recipe.getInput()[1]);
-            displayRecipes.add(new CustomItemStack(Material.PINK_STAINED_GLASS_PANE, "&e指示器", "&f下方箭头指向左侧合成原料所浓缩出的产物"));
+            displayRecipes.add(new CustomItemStack(Material.PINK_STAINED_GLASS_PANE, "&eIndicador", "&fA seta abaixo aponta para o produto concentrado a partir dos ingredientes a esquerda"));
             displayRecipes.add(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
                     "682ad1b9cb4dd21259c0d75aa315ff389c3cef752be3949338164bac84a96e")));
-            displayRecipes.add(new CustomItemStack(Material.PINK_STAINED_GLASS_PANE, "&e指示器", "&f玻璃旁边的下一个物品", "&f是左侧金属浓缩出的产物"));
+            displayRecipes.add(new CustomItemStack(Material.PINK_STAINED_GLASS_PANE, "&eIndicador", "&fO proximo item ao lado do vidro", "&fe o produto concentrado a partir do metal a esquerda"));
             displayRecipes.add(recipe.getOutput()[0]);
         }
 

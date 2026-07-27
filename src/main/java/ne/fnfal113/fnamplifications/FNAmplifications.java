@@ -30,8 +30,8 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         setInstance(this);
 
         if (!getServer().getPluginManager().isPluginEnabled("GuizhanLibPlugin")) {
-            getLogger().log(Level.SEVERE, "本插件需要 鬼斩前置库插件(GuizhanLibPlugin) 才能运行!");
-            getLogger().log(Level.SEVERE, "从此处下载: https://50l.cc/gzlib");
+            getLogger().log(Level.SEVERE, "Este plugin precisa do GuizhanLibPlugin para funcionar!");
+            getLogger().log(Level.SEVERE, "Baixe aqui: https://50l.cc/gzlib");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -39,8 +39,8 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
         new Metrics(this, 13219);
 
         getLogger().info("************************************************************");
-        getLogger().info("*             FN Amplifications - 作者 FN_FAL113            *");
-        getLogger().info("*                由 SlimefunGuguProject 汉化                *");
+        getLogger().info("*            FN Amplifications - por FN_FAL113            *");
+        getLogger().info("*             Traduzido para PT-BR - Eternity              *");
         getLogger().info("************************************************************");
 
         getConfig().options().copyDefaults();
@@ -63,7 +63,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
     @Override
     public void onDisable(){
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
-        getLogger().log(Level.INFO, "已取消所有正在执行的任务");
+        getLogger().log(Level.INFO, "Todas as tarefas em execucao foram canceladas");
     }
 
     public void registerCommands(){

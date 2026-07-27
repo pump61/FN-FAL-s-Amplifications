@@ -49,12 +49,12 @@ public class MysteryStick10 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "为什么说这根魔棒是神";
+        return ChatColor.GOLD + "Por que dizem que este bastao e divino";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "有时致命有时可怕的魔棒";
+        return ChatColor.WHITE + "Um bastao as vezes letal, as vezes assustador";
     }
 
     @Override
@@ -82,9 +82,9 @@ public class MysteryStick10 extends AbstractStick {
                 player.setHealth(player.getHealth() + 2);
                 victim.setHealth(victim.getHealth() < 2 ? victim.getHealth() + (victim.getHealth() * (-1)) : victim.getHealth() - 2);
             } else {
-                player.sendMessage(ChatColor.RED + "确保你的血量不足以让生命窃取生效!");
+                player.sendMessage(ChatColor.RED + "Verifique se sua vida esta baixa o suficiente para o roubo de vida funcionar!");
             }
-            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
         }
     }
 }

@@ -35,11 +35,11 @@ public class StaffOfAirStrider extends AbstractStaff {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         if(taskMap.get(player.getUniqueId()) != null) {
-            player.sendMessage(Utils.colorTranslator("&6浮空之杖赋予你的能力还未消散!"));
+            player.sendMessage(Utils.colorTranslator("&6O poder concedido pelo Cajado do Voo Suspenso ainda nao acabou!"));
 
             return;
         } else if(hasPermissionToCast(item.getItemMeta().getDisplayName(), player, player.getLocation())) {
-            player.sendMessage(Utils.colorTranslator("&d接下来的 10 秒你可以在空中行走了"));
+            player.sendMessage(Utils.colorTranslator("&dNos proximos 10 segundos voce pode andar no ar"));
 
             playerCooldowMap.put(player.getUniqueId(), System.currentTimeMillis());
             taskMap.put(player.getUniqueId(), new AirStriderTask(player));
@@ -55,12 +55,12 @@ public class StaffOfAirStrider extends AbstractStaff {
             Long timer = Utils.cooldownHelper(playerCooldowMap.get(player.getUniqueId()));
 
             if(timer >= 7){
-                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果将在 ") +
-                    (12 - timer) + " 秒后消失！");
+                player.sendMessage(Utils.colorTranslator("&dO efeito do Cajado do Voo Suspenso vai acabar em ") +
+                    (12 - timer) + " segundos!");
             }
 
             if(timer >= 12 || !player.isOnline()){
-                player.sendMessage(Utils.colorTranslator("&d浮空之杖的效果已消失!"));
+                player.sendMessage(Utils.colorTranslator("&dO efeito do Cajado do Voo Suspenso acabou!"));
                 playerCooldowMap.remove(player.getUniqueId());
                 taskMap.get(player.getUniqueId()).setDone(true);;
                 taskMap.remove(player.getUniqueId());

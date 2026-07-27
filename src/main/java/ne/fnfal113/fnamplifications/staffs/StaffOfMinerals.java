@@ -66,7 +66,7 @@ public class StaffOfMinerals extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("Mineral Ores");
+        bookMeta.setTitle("Minerios");
         bookMeta.setAuthor("FN_FAL113");
 
         if(amount != 0) {
@@ -74,8 +74,8 @@ public class StaffOfMinerals extends AbstractStaff {
                     .sorted(Map.Entry.comparingByValue())
                     .forEachOrdered(e -> contents.add(ChatColor.DARK_GREEN + e.getValue().toString() + "x " + ChatColor.GOLD + StringUtils.capitalize(e.getKey().toLowerCase(Locale.ROOT))));
 
-            firstPage.add(ChatColor.BLUE + "    矿物法杖\n\n " + ChatColor.GRAY +
-                    "  透过法杖的力量, 你被赐予了一本当前区块所含矿物位置的书本");
+            firstPage.add(ChatColor.BLUE + "    Cajado dos Minerais\n\n " + ChatColor.GRAY +
+                    "  Pelo poder do cajado, voce recebeu um livro com os minerios do chunk atual");
 
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < contents.size(); i = i + 5) {
@@ -87,8 +87,8 @@ public class StaffOfMinerals extends AbstractStaff {
                         .replace("_", " "));
             }
         } else {
-            firstPage.add(ChatColor.BLUE + "    矿物法杖\n\n " + ChatColor.GRAY +
-                    "  你所处的区块内矿物丝毫不剩");
+            firstPage.add(ChatColor.BLUE + "    Cajado dos Minerais\n\n " + ChatColor.GRAY +
+                    "  Nao ha nenhum minerio no chunk em que voce esta");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

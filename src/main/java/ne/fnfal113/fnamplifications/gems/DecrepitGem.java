@@ -34,7 +34,7 @@ public class DecrepitGem extends AbstractGem implements OnDamageHandler, GemUpgr
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e这个物品不能绑定! 此宝石只能绑定在防具上"));
+            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em armadura"));
         }
     }
 

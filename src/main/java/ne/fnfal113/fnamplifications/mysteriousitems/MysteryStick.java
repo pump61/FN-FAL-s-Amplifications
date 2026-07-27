@@ -45,12 +45,12 @@ public class MysteryStick extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "这是什么法术?";
+        return ChatColor.GOLD + "Que magia e essa?";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "我也很好奇这根魔棒是做什么的";
+        return ChatColor.WHITE + "Ate eu estou curioso pra saber o que esse bastao faz";
     }
 
     @Override
@@ -70,7 +70,7 @@ public class MysteryStick extends AbstractStick {
         if(getStickTask().onSwing(item, player, event.getDamage(), 27, 1)) {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 80, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
         }
     }
 }

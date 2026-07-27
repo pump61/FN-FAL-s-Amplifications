@@ -61,9 +61,9 @@ public class JukeBox extends AbstractJukeBox {
     @Override
     public void changeStatus(BlockMenu invMenu){
         invMenu.replaceExistingItem(49, new CustomItemStack(Material.MAGENTA_STAINED_GLASS_PANE,
-                "&d没有正在播放的唱片",
-                "&e放入唱片并单击",
-                "&e播放按钮或者上/下一首按钮"));
+                "&dNenhum disco tocando",
+                "&eColoque um disco e clique",
+                "&eno botao de tocar ou nos botoes de anterior/proxima"));
     }
 
     @Override
@@ -92,7 +92,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, -1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
         }
     }
 
@@ -110,7 +110,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, 1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
         }
     }
 
@@ -136,11 +136,11 @@ public class JukeBox extends AbstractJukeBox {
                 if (isSlotNotNull(menu, cache, 0)) {
                     playCurrentSlot(menu, cache, jukebox, location, 0);
                 } else {
-                    player.sendMessage(Utils.colorTranslator("&d对应槽位内没有唱片"));
+                    player.sendMessage(Utils.colorTranslator("&dNao ha disco neste slot"));
                 }
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&e唱片机关机了, 请先启动唱片机"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
         }
     }
 
@@ -244,8 +244,8 @@ public class JukeBox extends AbstractJukeBox {
         BlockStorage.addBlockInfo(location, "current_Slot", String.valueOf(cache.currentSlot));
 
         menu.replaceExistingItem(cache.currentSlot, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-                "&e当前槽位没有唱片",
-                "&e请切换播放槽位"));
+                "&eNao ha disco no slot atual",
+                "&eMude o slot de reproducao"));
         menu.reload();
 
         getCACHE_MAP().put(menu.getLocation(), cache);

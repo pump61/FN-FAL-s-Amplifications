@@ -68,7 +68,7 @@ public class GemListener implements Listener {
                             if(gem.isEnabledInCurrentWorld(p.getWorld().getName())) {
                                 consumer.accept(clazz.cast(gem));
                             } else {
-                                p.sendMessage(Utils.colorTranslator(gem.getItemName() + "&6 在你当前的世界被禁用了!"));
+                                p.sendMessage(Utils.colorTranslator(gem.getItemName() + "&6 esta desativada no seu mundo atual!"));
                             }
                         } // is gem an instance of the given interface class
                     } // is gem instance of AbstractGem

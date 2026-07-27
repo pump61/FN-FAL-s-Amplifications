@@ -3,7 +3,7 @@ version: '${project.version}'
 main: ne.fnfal113.fnamplifications.FNAmplifications
 api-version: 1.16
 authors: [ FN_FAL113 ]
-description: Explore plethora of in-game items from machines, tools, pvp and many more!
+description: Explore uma infinidade de itens do jogo, de maquinas e ferramentas a itens de PVP e muito mais!
 website: https://github.com/FN-FAL113
 depend: [Slimefun]
 softdepend:
@@ -13,17 +13,17 @@ softdepend:
   - Vault
 commands:
   fngear:
-    description: command for checking FN Gears progress
+    description: comando para verificar o progresso dos Equipamentos FN
     default: true
     usage: /<command>
   fnshockwavetest:
-    description: base command for testing shockwave
+    description: comando base para testar a onda de choque
     default: op
     usage: /<command>
 permissions:
   fngear.levelupgears:
-    description: for levelling up player worn FN Gears
+    description: para aprimorar os Equipamentos FN vestidos pelo jogador
     default: op
   fnshockwave.test:
-    description: for testing shockwave
+    description: para testar a onda de choque
     default: op

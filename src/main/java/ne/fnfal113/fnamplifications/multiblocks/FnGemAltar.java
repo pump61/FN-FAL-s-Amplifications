@@ -32,7 +32,7 @@ public class FnGemAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_gem_altar"),
             FNAmpItems.FN_GEM_ALTAR,
             "",
-            "&f宝石合成的地方!"
+            "&fOnde as gemas sao criadas!"
     );
 
 
@@ -95,13 +95,13 @@ public class FnGemAltar extends MultiBlockMachine {
             dispenser.getWorld().dropItem(b.getLocation(), output);
 
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&d合成出的物品将会被丢至附近"));
+            p.sendMessage(Utils.colorTranslator("&dO item criado sera ejetado nas proximidades"));
         }
 
         if(output.getItemMeta().hasDisplayName()){
-            p.sendMessage(Utils.colorTranslator("&d成功合成 " + output.getItemMeta().getDisplayName() + "!"));
+            p.sendMessage(Utils.colorTranslator("&dCriado com sucesso: " + output.getItemMeta().getDisplayName() + "!"));
         } else{
-            p.sendMessage(Utils.colorTranslator("&d成功合成了物品!"));
+            p.sendMessage(Utils.colorTranslator("&dItem criado com sucesso!"));
         }
     }
 

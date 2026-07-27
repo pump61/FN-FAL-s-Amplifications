@@ -70,8 +70,8 @@ public class CustomPowerGen extends SlimefunItem implements HologramOwner, Energ
         ItemMeta meta = itemStack.getItemMeta();
         List<String> lore = meta.getLore();
         lore.add(Utils.colorTranslator(LoreBuilderDynamic.powerBuffer(FNAmplifications.getInstance().getConfigManager().getCustomConfig("power-xpansion-settings").getInt(this.getId() + "." + "storage"))));
-        lore.add(Utils.colorTranslator(LoreBuilderDynamic.powerPerTick(FNAmplifications.getInstance().getConfigManager().getCustomConfig("power-xpansion-settings").getInt(this.getId() + "." + "dayrate")) + " (白天)"));
-        lore.add(Utils.colorTranslator(LoreBuilderDynamic.powerPerTick(FNAmplifications.getInstance().getConfigManager().getCustomConfig("power-xpansion-settings").getInt(this.getId() + "." + "nightrate")) + " (夜晚)"));
+        lore.add(Utils.colorTranslator(LoreBuilderDynamic.powerPerTick(FNAmplifications.getInstance().getConfigManager().getCustomConfig("power-xpansion-settings").getInt(this.getId() + "." + "dayrate")) + " (dia)"));
+        lore.add(Utils.colorTranslator(LoreBuilderDynamic.powerPerTick(FNAmplifications.getInstance().getConfigManager().getCustomConfig("power-xpansion-settings").getInt(this.getId() + "." + "nightrate")) + " (noite)"));
         meta.setLore(lore);
         itemStack.setItemMeta(meta);
     }
@@ -130,7 +130,7 @@ public class CustomPowerGen extends SlimefunItem implements HologramOwner, Energ
         } else {
             if(HOLO_CACHE.get(l)) {
                 String charge = getCharge(l) <= 0 ? Utils.colorTranslator("&8" + getCharge(l)) : Utils.colorTranslator("&a" + getCharge(l));
-                updateHologram(l.getBlock(), Utils.colorTranslator("&e已储存 &a⚡: " + charge));
+                updateHologram(l.getBlock(), Utils.colorTranslator("&eArmazenado &a⚡: " + charge));
             }
         }
 

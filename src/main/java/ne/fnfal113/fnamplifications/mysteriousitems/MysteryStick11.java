@@ -47,12 +47,12 @@ public class MysteryStick11 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "在你的敌人背后等待着危险";
+        return ChatColor.GOLD + "O perigo espreita atras do seu inimigo";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "诺德人的魔棒";
+        return ChatColor.WHITE + "O bastao dos nordicos";
     }
 
     @Override
@@ -78,8 +78,8 @@ public class MysteryStick11 extends AbstractStick {
             Location loc = victim.getLocation();
             loc.setYaw(loc.getYaw() + 180);
             victim.teleport(loc);
-            victim.sendMessage(ChatColor.DARK_RED + "你已经迷失了方向! 对手的魔棒十分致命");
-            player.sendMessage(Utils.colorTranslator("&c魔法效果已施加在你的敌人上"));
+            victim.sendMessage(ChatColor.DARK_RED + "Voce perdeu o rumo! O bastao do seu adversario e extremamente letal");
+            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
         }
 
     }
