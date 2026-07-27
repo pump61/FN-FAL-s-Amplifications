@@ -58,14 +58,14 @@ public class Gem {
                 getPlayer().setItemOnCursor(new ItemStack(Material.AIR));
                 socketGemToItemStack(meta, pdc, itemGemAmount);
             } else {
-                getPlayer().sendMessage(Utils.colorTranslator("&6Seu item ja possui a gema " + getSlimefunGemItemName() + " &6incrustada!"));
+                getPlayer().sendMessage(Utils.colorTranslator("&6Seu item já possui a gema " + getSlimefunGemItemName() + " &6incrustada!"));
                 getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BAT_TAKEOFF, 1.0F, 1.0F);
             }
 
             return;
         }
 
-        getPlayer().sendMessage(Utils.colorTranslator("&eUm item so pode receber no maximo cinco gemas!"));
+        getPlayer().sendMessage(Utils.colorTranslator("&eUm item só pode receber no máximo cinco gemas!"));
         getPlayer().playSound(getPlayer().getLocation(), Sound.ENTITY_BLAZE_HURT, 1.0F, 1.0F);
     }
 

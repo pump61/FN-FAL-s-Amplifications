@@ -47,12 +47,12 @@ public class MysteryStick7 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Sangue sera derramado pela terra";
+        return ChatColor.GOLD + "Sangue será derramado pela terra";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "A aura que emana deste bastao e fascinante";
+        return ChatColor.WHITE + "A aura que emana deste bastão é fascinante";
     }
 
     @Override
@@ -78,7 +78,7 @@ public class MysteryStick7 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 80, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 60, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

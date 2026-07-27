@@ -36,7 +36,7 @@ public class FnScrapRecycler extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_scrap_recycler"),
             FNAmpItems.FN_SCRAP_RECYCLER,
             "",
-            "&fA maquina que recicla sucata metalica!"
+            "&fA máquina que recicla sucata metálica!"
     );
 
 

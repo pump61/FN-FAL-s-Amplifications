@@ -50,12 +50,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
         Player player = event.getPlayer();
 
         if(event.getRightClicked() instanceof Player){
-            player.sendMessage(Utils.colorTranslator("&cO poder do cajado nao e suficiente para mover jogadores!"));
+            player.sendMessage(Utils.colorTranslator("&cO poder do cajado não é suficiente para mover jogadores!"));
             return;
         }
 
         if (!(event.getRightClicked() instanceof LivingEntity)) {
-            player.sendMessage(Utils.colorTranslator("&cEsta entidade nao pode ser movida pelo cajado"));
+            player.sendMessage(Utils.colorTranslator("&cEsta entidade não pode ser movida pelo cajado"));
             return;
         }
 
@@ -63,7 +63,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
 
         if (!Slimefun.getProtectionManager().hasPermission(
                 Bukkit.getOfflinePlayer(player.getUniqueId()), player.getLocation(), Interaction.BREAK_BLOCK)) {
-            player.sendMessage(Utils.colorTranslator("&cVoce nao tem permissao para usar " + this.getItemName() + " aqui!"));
+            player.sendMessage(Utils.colorTranslator("&cVocê não tem permissão para usar " + this.getItemName() + " aqui!"));
             return;
         }
 
@@ -79,7 +79,7 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
             Objects.requireNonNull(player.getLocation().getWorld()).playSound(player.getLocation(), Sound.ENTITY_ILLUSIONER_MIRROR_MOVE, 1, 1);
             getSTATE_MAP().put(player.getUniqueId(), true);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEsta entidade ja foi armazenada por outra pessoa!"));
+            player.sendMessage(Utils.colorTranslator("&eEsta entidade já foi armazenada por outra pessoa!"));
         }
     }
 
@@ -107,12 +107,12 @@ public class StaffOfLocomotion extends AbstractStaff implements EntityStaffImpl 
         if (!Slimefun.getProtectionManager().hasPermission(
                 Bukkit.getOfflinePlayer(player.getUniqueId()),
                 block, Interaction.BREAK_BLOCK)) {
-            player.sendMessage(ChatColor.DARK_RED + "Voce nao tem permissao para teleportar entidades aqui!");
+            player.sendMessage(ChatColor.DARK_RED + "Você não tem permissão para teleportar entidades aqui!");
             return;
         }
 
         if(getENTITY_OWNER().get(data) == null){
-            player.sendMessage("Voce ainda nao selecionou uma entidade com clique direito, ou o ID dela mudou apos um reinicio do servidor");
+            player.sendMessage("Você ainda não selecionou uma entidade com clique direito, ou o ID dela mudou após um reinício do servidor");
             return;
         }
 

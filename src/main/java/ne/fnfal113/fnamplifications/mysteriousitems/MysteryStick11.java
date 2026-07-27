@@ -47,12 +47,12 @@ public class MysteryStick11 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "O perigo espreita atras do seu inimigo";
+        return ChatColor.GOLD + "O perigo espreita atrás do seu inimigo";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "O bastao dos nordicos";
+        return ChatColor.WHITE + "O bastão dos nórdicos";
     }
 
     @Override
@@ -78,8 +78,8 @@ public class MysteryStick11 extends AbstractStick {
             Location loc = victim.getLocation();
             loc.setYaw(loc.getYaw() + 180);
             victim.teleport(loc);
-            victim.sendMessage(ChatColor.DARK_RED + "Voce perdeu o rumo! O bastao do seu adversario e extremamente letal");
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            victim.sendMessage(ChatColor.DARK_RED + "Você perdeu o rumo! O bastão do seu adversário é extremamente letal");
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

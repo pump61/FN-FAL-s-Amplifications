@@ -50,7 +50,7 @@ public class MysteryStick3 extends AbstractStick {
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Segurar este bastao parece sintoniza-lo com voce";
+        return ChatColor.WHITE + "Segurar este bastão parece sintoniza-lo com você";
     }
 
     @Override
@@ -75,7 +75,7 @@ public class MysteryStick3 extends AbstractStick {
         if(getStickTask().onSwing(item, player, event.getDamage(), 27, 1)) {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 80, 0, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

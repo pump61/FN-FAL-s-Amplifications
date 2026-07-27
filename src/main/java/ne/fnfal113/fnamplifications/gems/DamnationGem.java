@@ -40,7 +40,7 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
         if ((WeaponArmorEnum.SWORDS.isTagged(itemStackToSocket.getType()) || WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType()))) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada e machado"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em espada e machado"));
         }
     }
 
@@ -50,7 +50,7 @@ public class DamnationGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&eVoce nao tem permissao para usar a Gema da Danacao aqui! (requer permissao de interacao com blocos)"));
+            player.sendMessage(Utils.colorTranslator("&eVocê não tem permissão para usar a Gema da Danação aqui! (requer permissão de interação com blocos)"));
             return;
         } // check if player has the permission to build on current location
 

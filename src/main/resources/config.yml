@@ -1,25 +1,25 @@
-# Alterna se voce quer receber notificacoes de novas atualizacoes toda vez que o servidor reiniciar, caso uma nova versao seja lancada.
-# Se definido como "false" voce nao recebera notificacoes de novas atualizacoes e precisara atualizar manualmente.
+# Alterna se você quer receber notificações de novas atualizações toda vez que o servidor reiniciar, caso uma nova versão seja lançada.
+# Se definido como "false" você não receberá notificações de novas atualizações e precisará atualizar manualmente.
 auto-update: true
 
-# Itens do LiteXpansion (iridio) serao usados como receitas para o FN PowerXpansion
-# So funciona se o LiteXpansion estiver instalado e o valor for true
+# Itens do LiteXpansion (iridio) serão usados como receitas para o FN PowerXpansion
+# Só funciona se o LiteXpansion estiver instalado e o valor for true
 LiteX-Recipe-Integration: true
 
 # Itens do SimpleMaterialGenerators como algumas receitas para os FN Material Generators
-# Mesma logica acima, so funciona se o SMG estiver instalado e o valor for true
+# Mesma lógica acima, só funciona se o SMG estiver instalado e o valor for true
 SMG-Recipe-Integration: true
 
-# Usa itens da 1.17 (como ametista, cobre, calcita, etc) em algumas receitas dos itens de maquinario FN
-# So funciona se o servidor estiver rodando 1.17 e o valor for true
+# Usa itens da 1.17 (como ametista, cobre, calcita, etc) em algumas receitas dos itens de maquinário FN
+# Só funciona se o servidor estiver rodando 1.17 e o valor for true
 New-Recipe-Integration: true
 
 # Validador de efeito de armadura, o tempo em segundos para atualizar os efeitos da armadura (ex: efeitos permanentes do FN Gears of Friction)
-# Por enquanto apenas o peitoral possui um efeito permanente, a partir do nivel 30
+# Por enquanto apenas o peitoral possui um efeito permanente, a partir do nível 30
 armor-update-period: 10
 
-# Ativa ou desativa modulos do addon
-# As subcategorias serao removidas do guia ao desativar
+# Ativa ou desativa módulos do addon
+# As subcategorias serão removidas do guia ao desativar
 Enable-Machineries: true
 Enable-Material-Generators: true
 Enable-Gems: true

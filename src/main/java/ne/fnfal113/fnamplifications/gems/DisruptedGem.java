@@ -31,7 +31,7 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em espada"));
         }
     }
 
@@ -44,9 +44,9 @@ public class DisruptedGem extends AbstractGem implements OnGuardianSpawnHandler,
         if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())){
             event.setCancelled(true);
             event.getDamager().sendMessage(Utils
-                    .colorTranslator("&eVoce perturbou o guardiao do inimigo com sucesso, ele nao sera invocado"));
+                    .colorTranslator("&eVocê perturbou o guardião do inimigo com sucesso, ele não será invocado"));
             event.getGuardianOwner().sendMessage(Utils
-                    .colorTranslator("&6Seu guardiao foi perturbado pelo jogador que te atacou, ele nao sera invocado!"));
+                    .colorTranslator("&6Seu guardião foi perturbado pelo jogador que te atacou, ele não será invocado!"));
             event.getGuardianOwner().playSound(event.getGuardianOwner().getLocation(), Sound.ENTITY_ZOMBIE_DEATH, 1.0F, 1.0F);
         }
     }

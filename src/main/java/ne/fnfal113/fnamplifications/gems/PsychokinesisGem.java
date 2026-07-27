@@ -33,7 +33,7 @@ public class PsychokinesisGem extends AbstractGem implements OnProjectileDamageH
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em arco e besta"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em arco e besta"));
         }
     }
 

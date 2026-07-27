@@ -57,7 +57,7 @@ public abstract class AbstractStaff extends SlimefunItem {
             return true;
         }
 
-        player.sendMessage(Utils.colorTranslator("&cVoce nao tem permissao para usar " + staffName + " aqui!"));
+        player.sendMessage(Utils.colorTranslator("&cVocê não tem permissão para usar " + staffName + " aqui!"));
         return false;
     }
 

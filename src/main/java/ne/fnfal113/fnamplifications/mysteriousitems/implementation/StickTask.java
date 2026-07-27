@@ -128,7 +128,7 @@ public class StickTask {
 
             player.setLevel(player.getLevel() - levelDeduction);
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, TextComponent.
-                    fromLegacyText(Utils.colorTranslator("&dVoce consumiu " + levelDeduction + " nivel(is) de experiencia")));
+                    fromLegacyText(Utils.colorTranslator("&dVocê consumiu " + levelDeduction + " nível(is) de experiência")));
 
             itemMetaUpdate(item, item.getItemMeta(), getWeaponLore(), (int) damageAmount, levelDeduction, true);
 
@@ -163,10 +163,10 @@ public class StickTask {
 
         lore2.set(0, loreType);
         try {
-            lore2.set(1, ChatColor.YELLOW + "Experiencia total consumida: " + ChatColor.WHITE + xpAmount);
+            lore2.set(1, ChatColor.YELLOW + "Experiência total consumida: " + ChatColor.WHITE + xpAmount);
             lore2.set(2, ChatColor.YELLOW + "Dano total causado: " + ChatColor.WHITE + damageAmount);
         } catch (IndexOutOfBoundsException e) {
-            lore2.add(1, ChatColor.YELLOW + "Experiencia total consumida: " + ChatColor.WHITE + xpAmount);
+            lore2.add(1, ChatColor.YELLOW + "Experiência total consumida: " + ChatColor.WHITE + xpAmount);
             lore2.add(2, ChatColor.YELLOW + "Dano total causado: " + ChatColor.WHITE + damageAmount);
         }
 
@@ -184,8 +184,8 @@ public class StickTask {
     @ParametersAreNonnullByDefault
     public void darkenVision(Player player, int level) {
         player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 300, 2, false, false));
-        player.sendTitle(ChatColor.DARK_RED + "Sua visao escureceu!", ChatColor.RED + "Este bastao e imprevisivel", 45, 120, 135);
-        player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "[FNAmpli" + ChatColor.AQUA + "" + ChatColor.BOLD + "fications] > " + ChatColor.YELLOW + "Voce nao tem nivel suficiente para controlar este bastao, fique acima do nivel " + level);
+        player.sendTitle(ChatColor.DARK_RED + "Sua visão escureceu!", ChatColor.RED + "Este bastão é imprevisível", 45, 120, 135);
+        player.sendMessage(ChatColor.RED + "" + ChatColor.BOLD + "[FNAmpli" + ChatColor.AQUA + "" + ChatColor.BOLD + "fications] > " + ChatColor.YELLOW + "Você não tem nível suficiente para controlar este bastão, fique acima do nível " + level);
     }
 
 }

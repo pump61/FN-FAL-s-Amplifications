@@ -32,7 +32,7 @@ public class FnMagicAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_magic_altar"),
             FNAmpItems.FN_MAGIC_ALTAR,
             "",
-            "&fO altar onde itens magicos sao criados!"
+            "&fO altar onde itens mágicos são criados!"
     );
 
 
@@ -97,7 +97,7 @@ public class FnMagicAltar extends MultiBlockMachine {
 
             dispenser.getWorld().dropItem(b.getLocation(), output);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&dO item criado sera ejetado nas proximidades"));
+            p.sendMessage(Utils.colorTranslator("&dO item criado será ejetado nas proximidades"));
         }
 
         if(output.getItemMeta().hasDisplayName()){

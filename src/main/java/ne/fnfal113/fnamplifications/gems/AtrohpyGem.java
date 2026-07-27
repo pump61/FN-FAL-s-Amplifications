@@ -33,7 +33,7 @@ public class AtrohpyGem extends AbstractGem implements OnDamageHandler, GemUpgra
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada e machado"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em espada e machado"));
         }
     }
 

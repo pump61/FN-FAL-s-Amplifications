@@ -56,7 +56,7 @@ public class GemUnbinderTask {
         }
 
         if(gemArray.isEmpty()){
-            getPlayer().sendMessage(Utils.colorTranslator("&eEste item ainda nao possui nenhuma gema incrustada"));
+            getPlayer().sendMessage(Utils.colorTranslator("&eEste item ainda não possui nenhuma gema incrustada"));
             return;
         }
 

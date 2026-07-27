@@ -57,7 +57,7 @@ public class GuardianTask extends BukkitRunnable {
     }
 
     public void spawnZombie(EntityDamageByEntityEvent event){
-        getZombie().setCustomName(getPlayer().getName() + " - Guardiao");
+        getZombie().setCustomName(getPlayer().getName() + " - Guardião");
         getZombie().setCustomNameVisible(true);
         getZombie().setGlowing(true);
         getZombie().setAI(true);

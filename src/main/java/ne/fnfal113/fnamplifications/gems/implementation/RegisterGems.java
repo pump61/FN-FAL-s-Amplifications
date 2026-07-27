@@ -24,9 +24,9 @@ public class RegisterGems {
 
     private static final CustomItemStack anyUpgradeableGem = new CustomItemStack(
             Material.EMERALD,
-            "&dQualquer gema aprimoravel",
+            "&dQualquer gema aprimorável",
             "",
-            "&eDeve ser uma gema do mesmo tipo e nivel"
+            "&eDeve ser uma gema do mesmo tipo e nível"
     );
 
     private static final CustomItemStack anyUpgradedGem = new CustomItemStack(

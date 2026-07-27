@@ -30,7 +30,7 @@ public class TriSwordGem extends AbstractGem implements OnRightClickHandler {
         if (WeaponArmorEnum.SWORDS.isTagged(itemStackToSocket.getType())) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em espada"));
         }
     }
 
@@ -40,7 +40,7 @@ public class TriSwordGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&eVoce nao tem permissao para arremessar espadas aqui! (requer permissao de interacao com blocos)"));
+            player.sendMessage(Utils.colorTranslator("&eVocê não tem permissão para arremessar espadas aqui! (requer permissão de interação com blocos)"));
             return;
         } // check if player has permission to build on the current location
 

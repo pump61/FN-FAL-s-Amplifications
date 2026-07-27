@@ -20,7 +20,7 @@ public class BlemishedUnbindGem extends AbstractGemUnbinder {
     @Override
     public int onRightClick(PlayerInteractEvent event, Player player) {
         if(player.getInventory().getItemInOffHand().getType() == Material.AIR){
-            player.sendMessage(Utils.colorTranslator("&cVoce nao tem um item para desvincular na mao secundaria!"));
+            player.sendMessage(Utils.colorTranslator("&cVocê não tem um item para desvincular na mão secundária!"));
             return 0;
         }
         new GemUnbinderTask(player, player.getInventory().getItemInOffHand()).getGemsFromItem();

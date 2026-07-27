@@ -68,24 +68,24 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
     private final boolean dropBrokenVariantOnBreak = FNAmplifications.getInstance().getConfig().getBoolean("Enable-Mat-Gen-Broken-Drop", true);
 
     private static final CustomItemStack NOT_GENERATING = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNao esta funcionando",
-            "&eColoque um bau em cima!"
+            "&cNão está funcionando",
+            "&eColoque um baú em cima!"
     );
 
     private static final CustomItemStack NOT_GENERATING_FULL = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
-            "&cNao esta funcionando",
-            "&eO bau esta cheio!"
+            "&cNão está funcionando",
+            "&eO baú está cheio!"
     );
 
     private static final CustomItemStack CONDITION = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
             "&cStatus atual: ",
-            "&eColoque um bau em cima!"
+            "&eColoque um baú em cima!"
     );
 
     private static final CustomItemStack CONDITION_BROKEN = new CustomItemStack(Material.RED_STAINED_GLASS_PANE,
             "&cStatus atual: ",
-            "&eO gerador esta danificado, repare-o imediatamente!",
-            "&eVoce pode quebrar a maquina e craftar uma nova.",
+            "&eO gerador está danificado, repare-o imediatamente!",
+            "&eVocê pode quebrar a máquina e craftar uma nova.",
             "&eou usar o item de reparo para consertar o gerador"
     );
 
@@ -206,10 +206,10 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                     if(invMenu.toInventory() != null && invMenu.hasViewer()) {
                         invMenu.replaceExistingItem(4, new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE, "&aGerando material",
                                 "", "&bMaterial: " + this.materialName,
-                                "&bTaxa padrao: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getCustomConfig("material-gen-tickrate").getInt(this.getId() + "." + "tickrate") + " &aticks", "",
+                                "&bTaxa padrão: " + "" + ChatColor.GREEN + FNAmplifications.getInstance().getConfigManager().getCustomConfig("material-gen-tickrate").getInt(this.getId() + "." + "tickrate") + " &aticks", "",
                                 "&2Progresso: " + progress + "/" + tickRate, "",
-                                getGeneratorFastProduce().get(pos).getMultiplier() != 0 ? "&2Uso da producao acelerada: " +
-                                        getGeneratorFastProduce().get(pos).getCurrentLifetime() + "/" + getGeneratorFastProduce().get(pos).getMaxLifetime() : "&2Producao acelerada: &cDesativada"
+                                getGeneratorFastProduce().get(pos).getMultiplier() != 0 ? "&2Uso da produção acelerada: " +
+                                        getGeneratorFastProduce().get(pos).getCurrentLifetime() + "/" + getGeneratorFastProduce().get(pos).getMaxLifetime() : "&2Produção acelerada: &cDesativada"
                         ));
 
                         if(breakOverTime) { // update ui condition info if block breaks overtime
@@ -282,7 +282,7 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
                         "", "&eRuim" + " (" + generatorCondition + "%)"));
             } else if(generatorCondition < 25){
                 invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aStatus atual:",
-                        "", "&ePessimo" + " (" + generatorCondition + "%)"));
+                        "", "&ePéssimo" + " (" + generatorCondition + "%)"));
             }
         } else {
             invMenu.replaceExistingItem(0, new CustomItemStack(Material.RED_STAINED_GLASS_PANE, "&aStatus atual:",

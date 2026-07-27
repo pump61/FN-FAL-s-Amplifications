@@ -45,12 +45,12 @@ public class MysteryStick2 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Mais um bastao fragil";
+        return ChatColor.GOLD + "Mais um bastão frágil";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Mais um bastao de utilidade desconhecida";
+        return ChatColor.WHITE + "Mais um bastão de utilidade desconhecida";
     }
 
     @Override
@@ -70,7 +70,7 @@ public class MysteryStick2 extends AbstractStick {
         if(getStickTask().onSwing(item, player, event.getDamage(), 27, 1))  {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 80, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

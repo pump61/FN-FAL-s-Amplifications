@@ -45,7 +45,7 @@ public class GearCommands implements TabExecutor {
 
             if (args[0].equalsIgnoreCase("levelupgears")) {
                 if(!player.hasPermission("fngear.levelupgears")){
-                    player.sendMessage(Utils.colorTranslator("Voce nao tem permissao! E necessaria a permissao: fngear.levelupgears"));
+                    player.sendMessage(Utils.colorTranslator("Você não tem permissão! E necessária a permissão: fngear.levelupgears"));
                     return true;
                 }
 
@@ -62,7 +62,7 @@ public class GearCommands implements TabExecutor {
                             int maxReq = progress.getOrDefault(fnGear.getDefaultUsageKey3(), PersistentDataType.INTEGER, fnGear.getStartingProgress());
 
                             fnGear.getGearTask().levelUpArmour(armorLevel, maxReq, maxReq, itemStack, meta, progress, lore, player);
-                            player.sendMessage(Utils.colorTranslator("&6Equipamento aprimorado com sucesso: " + fnGear.getItemName() + " &6para o nivel " +
+                            player.sendMessage(Utils.colorTranslator("&6Equipamento aprimorado com sucesso: " + fnGear.getItemName() + " &6para o nível " +
                                     progress.get(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER)) + "");
 
                             fnGear.upgradeArmor(itemStack, progress.getOrDefault(fnGear.getDefaultUsageKey2(), PersistentDataType.INTEGER, 0), player, fnGear.getEquipmentSlot());

@@ -27,10 +27,10 @@ public class RetaliateGem extends AbstractGem {
                 bindGem(slimefunGemItem, itemStackToSocket, player);
                 retaliateWeapon(itemStackToSocket);
             } else {
-                player.sendMessage(Utils.colorTranslator("&eFalta a gema necessaria na arma, leia a descricao da gema primeiro!"));
+                player.sendMessage(Utils.colorTranslator("&eFalta a gema necessária na arma, leia a descrição da gema primeiro!"));
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em espada e machado"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em espada e machado"));
         }
     }
 

@@ -3,7 +3,7 @@ version: '${project.version}'
 main: ne.fnfal113.fnamplifications.FNAmplifications
 api-version: 1.16
 authors: [ FN_FAL113 ]
-description: Explore uma infinidade de itens do jogo, de maquinas e ferramentas a itens de PVP e muito mais!
+description: Explore uma infinidade de itens do jogo, de máquinas e ferramentas a itens de PVP e muito mais!
 website: https://github.com/FN-FAL113
 depend: [Slimefun]
 softdepend:

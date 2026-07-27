@@ -37,7 +37,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em pa, picareta e machado"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em pa, picareta e machado"));
         }
     }
 
@@ -53,7 +53,7 @@ public class HastyGem extends AbstractGem implements OnBlockBreakHandler, GemUpg
                 PotionEffect potionEffect = new PotionEffect(PotionEffectType.FAST_DIGGING, 80, 2, true, false, false);
                 player.addPotionEffect(potionEffect);
                 player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                        TextComponent.fromLegacyText(Utils.colorTranslator("&eSeus movimentos ficaram mais rapidos!")));
+                        TextComponent.fromLegacyText(Utils.colorTranslator("&eSeus movimentos ficaram mais rápidos!")));
             }
         }
     }

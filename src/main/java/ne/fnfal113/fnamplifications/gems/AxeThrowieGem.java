@@ -29,7 +29,7 @@ public class AxeThrowieGem extends AbstractGem implements OnRightClickHandler {
         if (WeaponArmorEnum.AXES.isTagged(itemStackToSocket.getType())) {
             bindGem(slimefunGemItem, itemStackToSocket, player);
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em machado"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em machado"));
         }
     }
 
@@ -39,7 +39,7 @@ public class AxeThrowieGem extends AbstractGem implements OnRightClickHandler {
             return;
         }
         if(!hasPermissionToThrow(player)){
-            player.sendMessage(Utils.colorTranslator("&eVoce nao tem permissao para arremessar machados aqui! (requer permissao de interacao com blocos)"));
+            player.sendMessage(Utils.colorTranslator("&eVocê não tem permissão para arremessar machados aqui! (requer permissão de interação com blocos)"));
             return;
         }
 

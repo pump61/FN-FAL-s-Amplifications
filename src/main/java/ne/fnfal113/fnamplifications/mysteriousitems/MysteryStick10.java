@@ -49,12 +49,12 @@ public class MysteryStick10 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Por que dizem que este bastao e divino";
+        return ChatColor.GOLD + "Por que dizem que este bastão é divino";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Um bastao as vezes letal, as vezes assustador";
+        return ChatColor.WHITE + "Um bastão às vezes letal, às vezes assustador";
     }
 
     @Override
@@ -82,9 +82,9 @@ public class MysteryStick10 extends AbstractStick {
                 player.setHealth(player.getHealth() + 2);
                 victim.setHealth(victim.getHealth() < 2 ? victim.getHealth() + (victim.getHealth() * (-1)) : victim.getHealth() - 2);
             } else {
-                player.sendMessage(ChatColor.RED + "Verifique se sua vida esta baixa o suficiente para o roubo de vida funcionar!");
+                player.sendMessage(ChatColor.RED + "Verifique se sua vida está baixa o suficiente para o roubo de vida funcionar!");
             }
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
     }
 }

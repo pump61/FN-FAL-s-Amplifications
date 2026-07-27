@@ -32,7 +32,7 @@ public class FnGemAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_gem_altar"),
             FNAmpItems.FN_GEM_ALTAR,
             "",
-            "&fOnde as gemas sao criadas!"
+            "&fOnde as gemas são criadas!"
     );
 
 
@@ -95,7 +95,7 @@ public class FnGemAltar extends MultiBlockMachine {
             dispenser.getWorld().dropItem(b.getLocation(), output);
 
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&dO item criado sera ejetado nas proximidades"));
+            p.sendMessage(Utils.colorTranslator("&dO item criado será ejetado nas proximidades"));
         }
 
         if(output.getItemMeta().hasDisplayName()){

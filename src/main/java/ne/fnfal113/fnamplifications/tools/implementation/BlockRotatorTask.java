@@ -57,7 +57,7 @@ public class BlockRotatorTask {
     public void onRightClick(Block block, Player player){
         if(!Slimefun.getProtectionManager().hasPermission(Bukkit.getOfflinePlayer(player.getUniqueId()),
                 player.getLocation(), Interaction.BREAK_BLOCK)){
-            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&eVoce nao tem permissao para girar este bloco!"));
+            player.sendMessage(Utils.colorTranslator("&c&l[FNAmpli" + "&b&lfications] > " + "&eVocê não tem permissão para girar este bloco!"));
             return;
         }
         BlockData blockData = block.getBlockData();

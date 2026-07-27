@@ -63,7 +63,7 @@ public class JukeBox extends AbstractJukeBox {
         invMenu.replaceExistingItem(49, new CustomItemStack(Material.MAGENTA_STAINED_GLASS_PANE,
                 "&dNenhum disco tocando",
                 "&eColoque um disco e clique",
-                "&eno botao de tocar ou nos botoes de anterior/proxima"));
+                "&eno botão de tocar ou nos botões de anterior/próxima"));
     }
 
     @Override
@@ -92,7 +92,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, -1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos está desligado, ligue-o primeiro"));
         }
     }
 
@@ -110,7 +110,7 @@ public class JukeBox extends AbstractJukeBox {
                 isOutOfBounds(menu, jukebox, cache, location, 1);
             }
         } else if (player != null) {
-            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos está desligado, ligue-o primeiro"));
         }
     }
 
@@ -136,11 +136,11 @@ public class JukeBox extends AbstractJukeBox {
                 if (isSlotNotNull(menu, cache, 0)) {
                     playCurrentSlot(menu, cache, jukebox, location, 0);
                 } else {
-                    player.sendMessage(Utils.colorTranslator("&dNao ha disco neste slot"));
+                    player.sendMessage(Utils.colorTranslator("&dNão há disco neste slot"));
                 }
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eO toca-discos esta desligado, ligue-o primeiro"));
+            player.sendMessage(Utils.colorTranslator("&eO toca-discos está desligado, ligue-o primeiro"));
         }
     }
 
@@ -244,8 +244,8 @@ public class JukeBox extends AbstractJukeBox {
         BlockStorage.addBlockInfo(location, "current_Slot", String.valueOf(cache.currentSlot));
 
         menu.replaceExistingItem(cache.currentSlot, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
-                "&eNao ha disco no slot atual",
-                "&eMude o slot de reproducao"));
+                "&eNão há disco no slot atual",
+                "&eMude o slot de reprodução"));
         menu.reload();
 
         getCACHE_MAP().put(menu.getLocation(), cache);

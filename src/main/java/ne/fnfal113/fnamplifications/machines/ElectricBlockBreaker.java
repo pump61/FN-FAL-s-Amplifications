@@ -58,7 +58,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     private static final ItemStack VERSIONED_AMETHYST;
 
     private static final CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-            "&cNao esta operando...",
+            "&cNão está operando...",
             "&eColoque o bloco a ser minerado na frente do dispensador!"
     );
 
@@ -68,8 +68,8 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
     );
 
     private static final CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-            "&cNao esta em funcionamento",
-            "&eLigue a maquina primeiro"
+            "&cNão está em funcionamento",
+            "&eLigue a máquina primeiro"
     );
 
     private static final CustomItemStack BREAK_BLOCK_NATURALLY = new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,

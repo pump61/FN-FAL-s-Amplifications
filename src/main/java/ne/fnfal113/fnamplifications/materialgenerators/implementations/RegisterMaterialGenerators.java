@@ -97,7 +97,7 @@ public class RegisterMaterialGenerators {
                             SMG_ITEMSTACK_NETHERRACK, FNAmpItems.FMG_GENERATOR_WARPED_BROKEN, SMG_ITEMSTACK_NETHERRACK,
                             SHOVEL.clone(), new ItemStack(Material.BLAST_FURNACE), SHOVEL.clone()}, 48)
                     .setItem(Material.WARPED_NYLIUM)
-                    .setMaterialName("&4&cMicelio Deformado")
+                    .setMaterialName("&4&cMicélio Deformado")
                     .register(instance);
         }
 

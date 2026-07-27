@@ -47,12 +47,12 @@ public class MysteryStick9 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Sera que os elfos possuiam esta reliquia?";
+        return ChatColor.GOLD + "Será que os elfos possuíam esta relíquia?";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Este bastao exige mais mana para ser usado";
+        return ChatColor.WHITE + "Este bastão exige mais mana para ser usado";
     }
 
     @Override
@@ -78,7 +78,7 @@ public class MysteryStick9 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 60, 1, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 60, 0, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 80, 2, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

@@ -32,7 +32,7 @@ public class FnMysteryStickAltar extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_mystery_stick_altar"),
             FNAmpItems.FN_STICK_ALTAR,
             "",
-            "&fO altar onde bastoes misteriosos sao criados!"
+            "&fO altar onde bastões misteriosos são criados!"
     );
 
 

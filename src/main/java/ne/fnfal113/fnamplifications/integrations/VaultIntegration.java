@@ -20,7 +20,7 @@ public class VaultIntegration {
         this.slimefunAddon = addon;
 
         if(!setupEconomy()){
-            getSlimefunAddon().getLogger().info("Vault nao detectado! Itens que precisam do Vault nao serao carregados.");
+            getSlimefunAddon().getLogger().info("Vault não detectado! Itens que precisam do Vault não serão carregados.");
         } else {
             getSlimefunAddon().getLogger().info("Vault detectado! Itens que precisam do Vault foram registrados com sucesso.");
         }

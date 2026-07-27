@@ -51,7 +51,7 @@ public class MysteryStick6 extends AbstractStick {
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Que a forca esteja com voce";
+        return ChatColor.WHITE + "Que a força esteja com você";
     }
 
     @Override
@@ -77,7 +77,7 @@ public class MysteryStick6 extends AbstractStick {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 40, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

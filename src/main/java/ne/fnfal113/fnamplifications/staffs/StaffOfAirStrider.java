@@ -35,11 +35,11 @@ public class StaffOfAirStrider extends AbstractStaff {
         ItemStack item = player.getInventory().getItemInMainHand();
 
         if(taskMap.get(player.getUniqueId()) != null) {
-            player.sendMessage(Utils.colorTranslator("&6O poder concedido pelo Cajado do Voo Suspenso ainda nao acabou!"));
+            player.sendMessage(Utils.colorTranslator("&6O poder concedido pelo Cajado do Voo Suspenso ainda não acabou!"));
 
             return;
         } else if(hasPermissionToCast(item.getItemMeta().getDisplayName(), player, player.getLocation())) {
-            player.sendMessage(Utils.colorTranslator("&dNos proximos 10 segundos voce pode andar no ar"));
+            player.sendMessage(Utils.colorTranslator("&dNos próximos 10 segundos você pode andar no ar"));
 
             playerCooldowMap.put(player.getUniqueId(), System.currentTimeMillis());
             taskMap.put(player.getUniqueId(), new AirStriderTask(player));

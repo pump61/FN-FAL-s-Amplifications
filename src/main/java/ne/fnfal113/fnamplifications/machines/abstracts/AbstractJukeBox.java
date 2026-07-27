@@ -26,8 +26,8 @@ import javax.annotation.Nullable;
 public abstract class AbstractJukeBox extends SlimefunItem implements InventoryBlock, EnergyNetComponent {
 
     public CustomItemStack NOT_OPERATING = new CustomItemStack(Material.ORANGE_STAINED_GLASS_PANE,
-            "&cNao esta tocando!",
-            "&eClique no botao de tocar"
+            "&cNão está tocando!",
+            "&eClique no botão de tocar"
     );
 
     public CustomItemStack OPERATING = new CustomItemStack(Material.GREEN_STAINED_GLASS_PANE,
@@ -40,7 +40,7 @@ public abstract class AbstractJukeBox extends SlimefunItem implements InventoryB
     );
 
     public CustomItemStack NOT_RUNNING = new CustomItemStack(Material.YELLOW_STAINED_GLASS_PANE,
-            "&cNao esta em funcionamento",
+            "&cNão está em funcionamento",
             "&eMude para o modo de funcionamento"
     );
 
@@ -73,7 +73,7 @@ public abstract class AbstractJukeBox extends SlimefunItem implements InventoryB
 
     public CustomItemStack NEXT = new CustomItemStack(PlayerHead.getItemStack(PlayerSkin.fromHashCode(
             "aab95a8751aeaa3c671a8e90b83de76a0204f1be65752ac31be2f98feb64bf7f")),
-            "&dProxima faixa"
+            "&dPróxima faixa"
     );
 
     private int energyCapacity = -1;

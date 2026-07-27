@@ -142,7 +142,7 @@ public class ThrowWeaponTask extends BukkitRunnable {
 
         // drop the weapon if the distance is greater square-root of 3600 or 60 blocks
         if(getArmorStand().getLocation().distanceSquared(getPlayer().getLocation()) > 3600){
-            getPlayer().sendMessage(Utils.colorTranslator("&eSua arma atingiu a distancia maxima de 60 blocos!"));
+            getPlayer().sendMessage(Utils.colorTranslator("&eSua arma atingiu a distância máxima de 60 blocos!"));
 
             if(shouldReturnWeapon(false)) {
                 return;

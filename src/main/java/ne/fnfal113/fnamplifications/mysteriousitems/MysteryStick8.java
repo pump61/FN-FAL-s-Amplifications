@@ -46,12 +46,12 @@ public class MysteryStick8 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Um bastao de deixar qualquer um sem palavras";
+        return ChatColor.GOLD + "Um bastão de deixar qualquer um sem palavras";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Um bastao um tanto pesado";
+        return ChatColor.WHITE + "Um bastão um tanto pesado";
     }
 
     @Override
@@ -73,7 +73,7 @@ public class MysteryStick8 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 60, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 40, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }

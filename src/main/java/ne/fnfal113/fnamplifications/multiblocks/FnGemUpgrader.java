@@ -41,7 +41,7 @@ public class FnGemUpgrader extends MultiBlockMachine {
             new NamespacedKey(FNAmplifications.getInstance(), "fn_gem_upgrader"),
             FNAmpItems.FN_GEM_UPGRADER,
             "",
-            "&fOnde gemas reluzentes sao aprimoradas!"
+            "&fOnde gemas reluzentes são aprimoradas!"
     );
 
 
@@ -104,7 +104,7 @@ public class FnGemUpgrader extends MultiBlockMachine {
                 if (sfItem instanceof GemUpgrade && SlimefunUtils.isItemSimilar(itemStack, gem, true, false)) {
                     if(((GemUpgrade) sfItem).getTier(itemStack, sfItem.getId()) == 1){
                         p.playSound(p.getLocation(), Sound.ENTITY_VILLAGER_NO, 1.0F, 1.0F);
-                        p.sendMessage(Utils.colorTranslator("&cNivel maximo atingido! Esta gema nao pode mais ser aprimorada!"));
+                        p.sendMessage(Utils.colorTranslator("&cNível máximo atingido! Esta gema não pode mais ser aprimorada!"));
                         return false;
                     }
                 } else {
@@ -130,7 +130,7 @@ public class FnGemUpgrader extends MultiBlockMachine {
         } else {
             dispenser.getWorld().dropItem(b.getLocation(), finalOutput);
             Slimefun.getLocalization().sendMessage(p, "machines.full-inventory", true);
-            p.sendMessage(Utils.colorTranslator("&dO item criado sera ejetado nas proximidades"));
+            p.sendMessage(Utils.colorTranslator("&dO item criado será ejetado nas proximidades"));
         }
 
         if(output.getItemMeta().hasDisplayName()){

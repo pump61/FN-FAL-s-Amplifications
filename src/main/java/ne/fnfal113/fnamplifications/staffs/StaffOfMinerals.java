@@ -66,7 +66,7 @@ public class StaffOfMinerals extends AbstractStaff {
         if(bookMeta == null){
             return;
         }
-        bookMeta.setTitle("Minerios");
+        bookMeta.setTitle("Minérios");
         bookMeta.setAuthor("FN_FAL113");
 
         if(amount != 0) {
@@ -75,7 +75,7 @@ public class StaffOfMinerals extends AbstractStaff {
                     .forEachOrdered(e -> contents.add(ChatColor.DARK_GREEN + e.getValue().toString() + "x " + ChatColor.GOLD + StringUtils.capitalize(e.getKey().toLowerCase(Locale.ROOT))));
 
             firstPage.add(ChatColor.BLUE + "    Cajado dos Minerais\n\n " + ChatColor.GRAY +
-                    "  Pelo poder do cajado, voce recebeu um livro com os minerios do chunk atual");
+                    "  Pelo poder do cajado, você recebeu um livro com os minérios do chunk atual");
 
             bookMeta.addPage(firstPageBook(firstPage));
             for (int i = 0; i < contents.size(); i = i + 5) {
@@ -88,7 +88,7 @@ public class StaffOfMinerals extends AbstractStaff {
             }
         } else {
             firstPage.add(ChatColor.BLUE + "    Cajado dos Minerais\n\n " + ChatColor.GRAY +
-                    "  Nao ha nenhum minerio no chunk em que voce esta");
+                    "  Não há nenhum minério no chunk em que você está");
             bookMeta.addPage(firstPageBook(firstPage));
         }
 

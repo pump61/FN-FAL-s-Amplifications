@@ -105,7 +105,7 @@ public class QuiverTask {
                 meta.getPersistentDataContainer().remove(getStorageKey3());
             }
             itemState.setType(Material.LEATHER);
-            player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " agora esta vazia");
+            player.sendMessage(ChatColor.GOLD + getSfItemStack().getDisplayName() + " agora está vazia");
             Utils.setLoreByPdc(itemState, meta, "Fechado (sem flechas)", "Status: " ,"&e", "&f", "");
         }
 
@@ -124,7 +124,7 @@ public class QuiverTask {
             return;
         }
         if(item.getAmount() != 1){
-            player.sendMessage(Utils.colorTranslator("&eA aljava nao pode ser empilhada ao ser usada pela primeira vez"));
+            player.sendMessage(Utils.colorTranslator("&eA aljava não pode ser empilhada ao ser usada pela primeira vez"));
             return;
         }
         int increment = arrowsCheckPDC + 1;
@@ -140,7 +140,7 @@ public class QuiverTask {
             Utils.setLoreByPdc(item, meta, String.valueOf(increment), "Flechas restantes: " ,"&e", "&f", "");
             Utils.setLoreByPdc(item, meta, "Aberto", "Status: " ,"&e", "&f", "");
             if(increment == getQuiverSize()){
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " esta cheia!"));
+                player.sendMessage(ChatColor.translateAlternateColorCodes('&', getSfItemStack().getDisplayName() + " está cheia!"));
             }
 
         }

@@ -28,7 +28,7 @@ public class CustomGeneratorMultiblock extends SimpleSlimefunItem<ItemUseHandler
     public ItemUseHandler getItemHandler() {
         return e -> {
             e.cancel();
-            e.getPlayer().sendMessage("Este item e apenas um modelo, voce precisa colocar o gerador de verdade.");
+            e.getPlayer().sendMessage("Este item é apenas um modelo, você precisa colocar o gerador de verdade.");
         };
     }
 }

@@ -36,7 +36,7 @@ public class AwakenGem extends AbstractGem implements OnPlayerDeathHandler, GemU
                 bindGem(slimefunGemItem, itemStackToSocket, player);
             }
         } else {
-            player.sendMessage(Utils.colorTranslator("&eEste item nao pode ser vinculado! Esta gema so pode ser vinculada em capacete"));
+            player.sendMessage(Utils.colorTranslator("&eEste item não pode ser vinculado! Esta gema só pode ser vinculada em capacete"));
         }
     }
 

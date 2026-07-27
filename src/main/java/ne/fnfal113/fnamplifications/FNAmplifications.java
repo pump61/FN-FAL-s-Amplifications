@@ -63,7 +63,7 @@ public final class FNAmplifications extends JavaPlugin implements SlimefunAddon 
     @Override
     public void onDisable(){
         Bukkit.getScheduler().cancelTasks(FNAmplifications.getInstance());
-        getLogger().log(Level.INFO, "Todas as tarefas em execucao foram canceladas");
+        getLogger().log(Level.INFO, "Todas as tarefas em execução foram canceladas");
     }
 
     public void registerCommands(){

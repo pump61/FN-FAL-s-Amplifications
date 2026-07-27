@@ -45,12 +45,12 @@ public class MysteryStick5 extends AbstractStick {
 
     @Override
     public String weaponLore(){
-        return ChatColor.GOLD + "Um bastao calculista para criaturas";
+        return ChatColor.GOLD + "Um bastão calculista para criaturas";
     }
 
     @Override
     public String stickLore(){
-        return ChatColor.WHITE + "Ja estou cansado desses bastoes";
+        return ChatColor.WHITE + "Já estou cansado desses bastões";
     }
 
     @Override
@@ -71,7 +71,7 @@ public class MysteryStick5 extends AbstractStick {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HARM, 100, 1, false, false, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 40, 0, false, false, false));
-            player.sendMessage(Utils.colorTranslator("&cO efeito magico foi aplicado ao seu inimigo"));
+            player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 
     }
