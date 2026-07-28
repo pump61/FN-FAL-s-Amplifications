@@ -60,7 +60,7 @@ public class AwakenGem extends AbstractGem implements OnPlayerDeathHandler, GemU
                     // calculate the angle of x, z and multiply it by the size
                     particleLoc.setX(loc.getX() + Math.cos(d) * 2);
                     particleLoc.setZ(loc.getZ() + Math.sin(d) * 2);
-                    player.getWorld().spawnParticle(Particle.REDSTONE, particleLoc, 2,
+                    player.getWorld().spawnParticle(Particle.DUST, particleLoc, 2,
                             new Particle.DustOptions(Color.fromRGB(r, g, b), 2));
                 }
             }, 2L);

@@ -37,9 +37,9 @@ public class MysteryStick11 extends AbstractStick {
     @Override
     public Map<Enchantment, Integer> enchantments(){
         Map<Enchantment, Integer> enchantments = new HashMap<>();
-        enchantments.put(Enchantment.DAMAGE_ARTHROPODS, 10);
-        enchantments.put(Enchantment.DAMAGE_ALL, 7);
-        enchantments.put(Enchantment.DAMAGE_UNDEAD, 8);
+        enchantments.put(Enchantment.BANE_OF_ARTHROPODS, 10);
+        enchantments.put(Enchantment.SHARPNESS, 7);
+        enchantments.put(Enchantment.SMITE, 8);
         enchantments.put(Enchantment.KNOCKBACK, 2);
 
         return enchantments;
@@ -71,7 +71,7 @@ public class MysteryStick11 extends AbstractStick {
 
         if(getStickTask().onSwing(item, player, event.getDamage(), 13, 4)) {
             LivingEntity victim = (LivingEntity) event.getEntity();
-            victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 80, 2, false, true, false));
+            victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, 2, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 80, 2, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.HUNGER, 100, 2, false, true, false));
 

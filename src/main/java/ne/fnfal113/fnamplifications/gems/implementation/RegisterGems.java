@@ -231,7 +231,7 @@ public class RegisterGems {
 
         new CelerityGem(FNAmpItems.FN_GEMS, FNAmpItems.FN_GEM_CELERITY, FnGemAltar.RECIPE_TYPE, new ItemStack[]{
                 FNAmpItems.AGILITY_RUNE, null, FNAmpItems.AGILITY_RUNE,
-                new PotionBuilder(PotionType.SPEED).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.SPEED).createPotion(),
+                new PotionBuilder(PotionType.SWIFTNESS).createPotion(), new ItemStack(Material.EMERALD), new PotionBuilder(PotionType.SWIFTNESS).createPotion(),
                 null, FNAmpItems.POWER_RUNE, null})
                 .register(instance);
 

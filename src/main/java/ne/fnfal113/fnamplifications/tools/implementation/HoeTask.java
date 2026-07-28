@@ -33,7 +33,11 @@ public class HoeTask {
         }
         MAT.addAll(Tag.FLOWERS.getValues());
         MAT.addAll(Tag.SMALL_FLOWERS.getValues());
-        MAT.addAll(Tag.TALL_FLOWERS.getValues());
+        // Tag.TALL_FLOWERS não existe nessa build do servidor - lista manual
+        MAT.add(Material.SUNFLOWER);
+        MAT.add(Material.LILAC);
+        MAT.add(Material.ROSE_BUSH);
+        MAT.add(Material.PEONY);
         MAT.addAll(Tag.SAPLINGS.getValues());
     }
 
@@ -44,7 +48,7 @@ public class HoeTask {
     );
 
     private final Set<Material> grass = EnumSet.of(
-            Material.GRASS,
+            Material.SHORT_GRASS,
             Material.FERN,
             Material.LARGE_FERN,
             Material.TALL_GRASS

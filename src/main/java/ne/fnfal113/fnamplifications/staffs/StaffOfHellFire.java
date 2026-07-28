@@ -39,7 +39,7 @@ public class StaffOfHellFire extends AbstractStaff {
 
         getStaffTask().updateMeta(item, meta, player);
 
-        AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_HELL_FIRE", 2.85F, 160, Particle.SMOKE_NORMAL, null);
+        AreaOfEffectStaffTask cloudStaff = new AreaOfEffectStaffTask(player, block, "FN_HELL_FIRE", 2.85F, 160, Particle.SMOKE, null);
         cloudStaff.spawnCloud();
 
     }

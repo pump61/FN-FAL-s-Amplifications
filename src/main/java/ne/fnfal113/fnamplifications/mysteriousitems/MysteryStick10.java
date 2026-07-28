@@ -39,10 +39,10 @@ public class MysteryStick10 extends AbstractStick {
     public Map<Enchantment, Integer> enchantments(){
         Map<Enchantment, Integer> enchantments = new HashMap<>();
         enchantments.put(Enchantment.SWEEPING_EDGE, 10);
-        enchantments.put(Enchantment.DAMAGE_ALL, 8);
+        enchantments.put(Enchantment.SHARPNESS, 8);
         enchantments.put(Enchantment.FIRE_ASPECT, 7);
-        enchantments.put(Enchantment.DAMAGE_ARTHROPODS, 7);
-        enchantments.put(Enchantment.DAMAGE_UNDEAD, 8);
+        enchantments.put(Enchantment.BANE_OF_ARTHROPODS, 7);
+        enchantments.put(Enchantment.SMITE, 8);
 
         return enchantments;
     }
@@ -77,7 +77,7 @@ public class MysteryStick10 extends AbstractStick {
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 80, 2, false, true, false));
             victim.addPotionEffect(new PotionEffect(PotionEffectType.WEAKNESS, 80, 2, false, true, false));
 
-            int playerDefaultHealth = (int) Objects.requireNonNull(player.getAttribute(Attribute.GENERIC_MAX_HEALTH)).getValue();
+            int playerDefaultHealth = (int) Objects.requireNonNull(player.getAttribute(Attribute.MAX_HEALTH)).getValue();
             if(player.getHealth() < playerDefaultHealth - 2)  {
                 player.setHealth(player.getHealth() + 2);
                 victim.setHealth(victim.getHealth() < 2 ? victim.getHealth() + (victim.getHealth() * (-1)) : victim.getHealth() - 2);

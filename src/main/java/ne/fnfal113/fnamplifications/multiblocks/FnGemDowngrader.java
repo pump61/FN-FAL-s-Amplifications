@@ -153,12 +153,12 @@ public class FnGemDowngrader extends MultiBlockMachine {
 
             Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> {
                 b.getWorld().spawnParticle(Particle.FLAME, b.getLocation().add(0.4, 0.45, 0.5), 2, 0.1, 0.1, 0.1, 0.1);
-                b.getWorld().spawnParticle(Particle.SMOKE_LARGE, b.getLocation().add(0.4, 0.5, 0.5), 2, 0.1, 0.1, 0.1, 0.1);
+                b.getWorld().spawnParticle(Particle.LARGE_SMOKE, b.getLocation().add(0.4, 0.5, 0.5), 2, 0.1, 0.1, 0.1, 0.1);
                 b.getWorld().playSound(b.getLocation(), Sound.BLOCK_GRINDSTONE_USE, 1, 1);
 
                 Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> {
                     b.getWorld().playEffect(b.getLocation().add(0.35, 0.75, 0.35), Effect.MOBSPAWNER_FLAMES, 1);
-                    b.getWorld().spawnParticle(Particle.SMOKE_LARGE, b.getLocation().add(0.2, 1.7, 0.2), 2, 0.1, 0.1, 0.1, 0.1);
+                    b.getWorld().spawnParticle(Particle.LARGE_SMOKE, b.getLocation().add(0.2, 1.7, 0.2), 2, 0.1, 0.1, 0.1, 0.1);
                     b.getWorld().playSound(b.getLocation(), Sound.UI_STONECUTTER_TAKE_RESULT, 1, 1);
 
                     Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> {

@@ -81,7 +81,7 @@ public class ThrowableTorch extends SlimefunItem {
             RayTraceResult result = armorStand.rayTraceBlocks(0.80);
             List<Entity> entityList = armorStand.getNearbyEntities(0.3, 0.3, 0.3);
 
-            if(result != null && Objects.requireNonNull(result.getHitBlock()).getType() != Material.GRASS && !Tag.FLOWERS.isTagged(result.getHitBlock().getType())){
+            if(result != null && Objects.requireNonNull(result.getHitBlock()).getType() != Material.SHORT_GRASS && !Tag.FLOWERS.isTagged(result.getHitBlock().getType())){
                 Block blockHit = result.getHitBlock();
 
                 if(blockHit == null || blockTypePredicate.test(blockHit) || IGNORED_SOLID_BLOCKS.contains(blockHit.getType())

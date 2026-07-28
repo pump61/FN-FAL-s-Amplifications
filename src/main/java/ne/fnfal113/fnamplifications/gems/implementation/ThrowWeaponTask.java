@@ -105,7 +105,7 @@ public class ThrowWeaponTask extends BukkitRunnable {
         // check if the raytrace result has a block within the max distance
         // if it hits a block, the weapon is either returned or dropped
         if(result != null &&
-                Objects.requireNonNull(result.getHitBlock()).getType() != Material.GRASS &&
+                Objects.requireNonNull(result.getHitBlock()).getType() != Material.SHORT_GRASS &&
                     !Tag.FLOWERS.isTagged(result.getHitBlock().getType())){
             if(shouldReturnWeapon(false)) {
                 return;

@@ -37,7 +37,7 @@ public class MysteryStick4 extends AbstractStick {
     public Map<Enchantment, Integer> enchantments(){
         Map<Enchantment, Integer> enchantments = new HashMap<>();
         enchantments.put(Enchantment.SWEEPING_EDGE, 3);
-        enchantments.put(Enchantment.DAMAGE_ALL, 3);
+        enchantments.put(Enchantment.SHARPNESS, 3);
         enchantments.put(Enchantment.FIRE_ASPECT, 3);
 
         return enchantments;
@@ -70,7 +70,7 @@ public class MysteryStick4 extends AbstractStick {
         if(getStickTask().onSwing(item, player, event.getDamage(), 20, 2))  {
             LivingEntity victim = (LivingEntity) event.getEntity();
             victim.addPotionEffect(new PotionEffect(PotionEffectType.POISON, 100, 1, false, false, false));
-            victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 40, 0, false, false, false));
+            victim.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 40, 0, false, false, false));
             player.sendMessage(Utils.colorTranslator("&cO efeito mágico foi aplicado ao seu inimigo"));
         }
 

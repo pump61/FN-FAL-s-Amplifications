@@ -58,7 +58,7 @@ public class SedateGem extends AbstractGem implements OnDamageHandler, GemUpgrad
         if(ThreadLocalRandom.current().nextInt(100) < getChance() / tier){
             int level = Math.abs(tier - 4);
 
-            livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, 80, level));
+            livingEntity.addPotionEffect(new PotionEffect(PotionEffectType.SLOWNESS, 80, level));
             sendGemMessage(player, this.getItemName());
         }
 

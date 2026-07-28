@@ -16,13 +16,13 @@ public class JukeBoxClickListener implements Listener {
         if(event.getView().getTitle().contains(Utils.colorTranslator("&5F&dN &fToca-discos"))){
             if(event.getCurrentItem() != null) {
                 ItemStack itemStack = event.getCurrentItem();
-                if (Tag.ITEMS_MUSIC_DISCS.isTagged(itemStack.getType()) && itemStack.getItemMeta().hasEnchant(Enchantment.BINDING_CURSE)) {
+                if (itemStack.getType().name().startsWith("MUSIC_DISC_") && itemStack.getItemMeta().hasEnchant(Enchantment.BINDING_CURSE)) {
                     event.setCancelled(true);
                 }
                 if(itemStack.getType() == Material.PINK_STAINED_GLASS_PANE){
                     event.setCancelled(true);
                 }
-                if(!Tag.ITEMS_MUSIC_DISCS.isTagged(itemStack.getType())){
+                if(!itemStack.getType().name().startsWith("MUSIC_DISC_")){
                     event.setCancelled(true);
                 }
             }

@@ -298,7 +298,8 @@ public class JukeBox extends AbstractJukeBox {
 
     @Override
     public boolean isMusicDisc(ItemStack itemStack){
-        return Tag.ITEMS_MUSIC_DISCS.isTagged(itemStack.getType());
+        // Tag.ITEMS_MUSIC_DISCS não existe nessa build do servidor
+        return itemStack.getType().name().startsWith("MUSIC_DISC_");
     }
 
     public static class JukeboxCache {

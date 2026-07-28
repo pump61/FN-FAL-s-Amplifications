@@ -52,7 +52,7 @@ public class SmokeCriminalGem extends AbstractGem implements OnDamageHandler, Ge
         Player victim = (Player) event.getEntity();
 
         if(ThreadLocalRandom.current().nextInt(100) < getChance() / getTier(itemStack, this.getId())) {
-            int victimMaxHealth = (int) Objects.requireNonNull(victim.getAttribute(Attribute.GENERIC_MAX_HEALTH)).getValue();
+            int victimMaxHealth = (int) Objects.requireNonNull(victim.getAttribute(Attribute.MAX_HEALTH)).getValue();
 
             Bukkit.getScheduler().runTaskLater(FNAmplifications.getInstance(), () -> { // delay getting the actual hp of the victim
                 if(victim.getHealth() <= victimMaxHealth * 0.30){
@@ -66,7 +66,7 @@ public class SmokeCriminalGem extends AbstractGem implements OnDamageHandler, Ge
                             double x = Math.cos(a) * 0.65;
                             double z = Math.sin(a) * 0.65;
                             double y = a / 25;
-                            victim.getWorld().spawnParticle(Particle.SMOKE_NORMAL, victim.getLocation().clone().add(x, y, z), 0);
+                            victim.getWorld().spawnParticle(Particle.SMOKE, victim.getLocation().clone().add(x, y, z), 0);
                         }
 
                         if(i.get() == 10 || victim.isDead() || !victim.isValid()){

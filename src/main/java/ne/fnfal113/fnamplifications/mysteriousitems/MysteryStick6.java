@@ -37,9 +37,9 @@ public class MysteryStick6 extends AbstractStick {
     @Override
     public Map<Enchantment, Integer> enchantments(){
         Map<Enchantment, Integer> enchantments = new HashMap<>();
-        enchantments.put(Enchantment.ARROW_DAMAGE, 4);
-        enchantments.put(Enchantment.ARROW_INFINITE, 1);
-        enchantments.put(Enchantment.ARROW_KNOCKBACK, 1);
+        enchantments.put(Enchantment.POWER, 4);
+        enchantments.put(Enchantment.INFINITY, 1);
+        enchantments.put(Enchantment.PUNCH, 1);
 
         return enchantments;
     }

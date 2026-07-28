@@ -279,7 +279,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
                             }
                         }
                         targetLocation.playSound(b.getLocation().add(0.5, 0.5, 0.5), Sound.UI_STONECUTTER_TAKE_RESULT, 1, 1);
-                        b.getWorld().spawnParticle(Particle.SMOKE_LARGE, b.getLocation().add(1, 1, 1), 2, 0.1, 0.1, 0.1);
+                        b.getWorld().spawnParticle(Particle.LARGE_SMOKE, b.getLocation().add(1, 1, 1), 2, 0.1, 0.1, 0.1);
                     } else {
                         progress++;
                         targetLocation.playSound(b.getLocation().add(0.5, 0.5, 0.5), Sound.BLOCK_STONE_HIT, 1, 1);

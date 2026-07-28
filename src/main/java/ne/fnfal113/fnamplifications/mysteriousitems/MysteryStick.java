@@ -37,7 +37,7 @@ public class MysteryStick extends AbstractStick {
     public Map<Enchantment, Integer> enchantments(){
         Map<Enchantment, Integer> enchantments = new HashMap<>();
         enchantments.put(Enchantment.SWEEPING_EDGE, 2);
-        enchantments.put(Enchantment.DAMAGE_ALL, 3);
+        enchantments.put(Enchantment.SHARPNESS, 3);
         enchantments.put(Enchantment.FIRE_ASPECT, 2);
 
         return enchantments;

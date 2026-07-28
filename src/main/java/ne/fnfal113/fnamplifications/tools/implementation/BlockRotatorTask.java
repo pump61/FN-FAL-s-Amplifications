@@ -63,7 +63,11 @@ public class BlockRotatorTask {
         BlockData blockData = block.getBlockData();
 
         if(player.isSneaking()){
-            if(Tag.DOORS.isTagged(block.getType()) || Tag.TALL_FLOWERS.isTagged(block.getType()) ||
+            // Tag.TALL_FLOWERS não existe nessa build do servidor - checado manualmente abaixo
+            boolean isTallFlower = block.getType() == Material.SUNFLOWER || block.getType() == Material.LILAC
+                    || block.getType() == Material.ROSE_BUSH || block.getType() == Material.PEONY;
+
+            if(Tag.DOORS.isTagged(block.getType()) || isTallFlower ||
                     Tag.FLOWERS.isTagged(block.getType())){
                 return;
             }

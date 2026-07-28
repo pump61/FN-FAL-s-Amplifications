@@ -178,7 +178,7 @@ public class QuiverTask {
         int arrows = getArrows(arrow_Left, getStorageKey());
         int decrement = arrows - 1;
 
-        if(checkInfinity && bowMeta.hasEnchant(Enchantment.ARROW_INFINITE)) {
+        if(checkInfinity && bowMeta.hasEnchant(Enchantment.INFINITY)) {
             decrement = arrows;
         }
 

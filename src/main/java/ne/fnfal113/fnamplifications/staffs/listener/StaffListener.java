@@ -74,10 +74,10 @@ public class StaffListener implements Listener {
         if (Objects.equals(event.getEntity().getCustomName(), "FN_HEALING")){
             String playerCaster = event.getEntity().getPersistentDataContainer().get(Keys.createKey("cloudfn"), PersistentDataType.STRING);
             for(LivingEntity entity : event.getAffectedEntities()){
-                boolean health = entity.getAttribute(Attribute.GENERIC_MAX_HEALTH) != null;
+                boolean health = entity.getAttribute(Attribute.MAX_HEALTH) != null;
                 if(entity instanceof Player) {
                     if (entity.getName().equals(playerCaster) && health) {
-                        double maxHealth = Objects.requireNonNull(entity.getAttribute(Attribute.GENERIC_MAX_HEALTH)).getValue();
+                        double maxHealth = Objects.requireNonNull(entity.getAttribute(Attribute.MAX_HEALTH)).getValue();
                         if (entity.getHealth() < maxHealth - 2) {
                             entity.setHealth(entity.getHealth() + 2);
                         }
