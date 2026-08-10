@@ -238,12 +238,12 @@ public class ElectricJukebox extends JukeBox {
                         if(jukebox.getPlaying() != Material.AIR) {
                             invMenu.replaceExistingItem(49, new CustomItemStack(Material.PINK_STAINED_GLASS_PANE,
                                     "&d&lTocando: " + jukebox.getPlaying().toString().replace("_", " "),
-                                    "&eProgresso : " + durationMap.get(b.getLocation()) + "/" + (DiscDurationsEnum.valueOf(jukebox.getPlaying().toString().toUpperCase()).getDurationInSec() * 2)));
+                                    "&eProgresso : " + durationMap.get(b.getLocation()) + "/" + (DiscDurationsEnum.getDurationInSecOrDefault(jukebox.getPlaying().toString().toUpperCase(), 180) * 2)));
                         }
                     } // has viewer
 
                     if(durationMap.containsKey(b.getLocation())) {
-                        if (durationMap.get(b.getLocation()) >= (DiscDurationsEnum.valueOf(jukebox.getPlaying().toString().toUpperCase()).getDurationInSec() * 2)) {
+                        if (durationMap.get(b.getLocation()) >= (DiscDurationsEnum.getDurationInSecOrDefault(jukebox.getPlaying().toString().toUpperCase(), 180) * 2)) {
                             nextDiscButton(null, invMenu);
                             currentTime = 0;
                         } // when disc duration is done, check next slot if there is a disc else stop the jukebox or go back to default slot when upper bound is reached
