@@ -38,6 +38,7 @@ public abstract class AbstractStaff extends SlimefunItem {
         setConfigValues(maxUses, this.getItem().getType().toString());
         setMaterial();
         Utils.setLoreByConfigValue(this.getItem(), this.getId(), "max-uses", "usos", "&e", " usos", "staffs-settings");
+        Utils.excludeFromLoreTranslation(this.getItem());
     }
 
     public void setMaterial(){

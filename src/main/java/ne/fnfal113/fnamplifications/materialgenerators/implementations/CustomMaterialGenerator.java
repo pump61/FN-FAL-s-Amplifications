@@ -98,6 +98,9 @@ public class CustomMaterialGenerator extends SlimefunItem implements InventoryBl
 
         FNAmplifications.getInstance().getConfigManager().initializeConfig(item.getItemId(), "tickrate" , tickRate, "material-gen-tickrate");
         Utils.setLoreByConfigValue(this.getItem(), this.getId(), "tickrate", "ticks", "&6", " ticks", "material-gen-tickrate");
+        // O SlimefunTranslation sobrescrevia essa lore com a versão estática (sem o
+        // tickrate substituído), voltando o placeholder cru "ticks" - ver Utils.excludeFromLoreTranslation.
+        Utils.excludeFromLoreTranslation(this.getItem());
 
         createPreset(this, getInventoryTitle(), blockMenuPreset -> {
             for (int i = 0; i < 9; i++) {

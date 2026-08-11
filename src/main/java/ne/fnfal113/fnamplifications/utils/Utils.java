@@ -1,7 +1,9 @@
 package ne.fnfal113.fnamplifications.utils;
 
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import ne.fnfal113.fnamplifications.FNAmplifications;
 import net.md_5.bungee.api.ChatColor;
+import org.bukkit.NamespacedKey;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -103,8 +105,26 @@ public class Utils {
         itemStack.setItemMeta(meta);
     }
 
+    // Mesma PDC key que o SlimefunTranslation usa pra excluir um item da retradução de
+    // lore (net.guizhanss.slimefuntranslation.utils.constant.Keys.SEARCH_DISPLAY). Sem
+    // isso, ao traduzir o item ele sobrescreve a lore inteira com a versão estática
+    // cacheada do item, perdendo qualquer valor já substituído por setLoreByConfigValue
+    // (tickrate, chance, usos, etc.) e voltando o placeholder cru sem o número.
+    private static final NamespacedKey SFT_SEARCH_DISPLAY = new NamespacedKey("slimefuntranslation", "search_display");
+
     /**
-     * 
+     * Chamar sempre depois de {@link #setLoreByConfigValue} (ou qualquer outra
+     * substituição de lore feita uma única vez no registro do item) pra impedir que o
+     * SlimefunTranslation sobrescreva o valor já substituído com a tradução estática.
+     */
+    public static void excludeFromLoreTranslation(@Nonnull ItemStack itemStack) {
+        ItemMeta meta = itemStack.getItemMeta();
+        PersistentDataAPI.setBoolean(meta, SFT_SEARCH_DISPLAY, true);
+        itemStack.setItemMeta(meta);
+    }
+
+    /**
+     *
      * @param itemStack the itemstack involved
      * @param meta itemstack's item meta
      * @param value value being to set in the lore

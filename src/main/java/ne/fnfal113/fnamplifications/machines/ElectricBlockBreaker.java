@@ -138,6 +138,7 @@ public class ElectricBlockBreaker extends SlimefunItem implements InventoryBlock
         FNAmplifications.getInstance().getConfigManager().initializeConfig(this.getId(), "tickrate", tickRate, "block-breaker-tickrate");
         setRate();
         Utils.setLoreByConfigValue(this.getItem(), this.getId(), "tickrate", "ticks", "&e", " ticks", "block-breaker-tickrate");
+        Utils.excludeFromLoreTranslation(this.getItem());
         addItemHandler(
             new BlockTicker() {
                 @Override
