@@ -54,25 +54,25 @@ public class RegisterPowerGenerators {
                 FNAmpItems.POWER_COMPONENT, new CustomItemStack(LITEX_ITEMSTACK_TIN, 3), FNAmpItems.POWER_COMPONENT,
                 FNAmpItems.BASIC_MACHINE_BLOCK, SlimefunItems.SOLAR_GENERATOR_4, FNAmpItems.BASIC_MACHINE_BLOCK,
                 SlimefunItems.BASIC_CIRCUIT_BOARD, FNAmpItems.ALUMINUM_PLATING, SlimefunItems.BASIC_CIRCUIT_BOARD
-        }, 236, 138, 20, 100000).register(instance);
+        }, 236, 138, 20, 25000).register(instance);
 
         new CustomPowerGen(FNAmpItems.POWER_GENERATORS, FNAmpItems.FN_XPANSION_POWER_R2, FnAssemblyStation.RECIPE_TYPE, new ItemStack[]{
                 FNAmpItems.POWER_COMPONENT, FNAmpItems.FN_XPANSION_POWER_R1, FNAmpItems.POWER_COMPONENT,
                 FNAmpItems.BASIC_MACHINE_BLOCK, new CustomItemStack(LITEX_ITEMSTACK_SOLDER, 3), FNAmpItems.BASIC_MACHINE_BLOCK,
                 SlimefunItems.BASIC_CIRCUIT_BOARD, FNAmpItems.ALUMINUM_PLATING, SlimefunItems.BASIC_CIRCUIT_BOARD
-        }, 472, 276, 40, 200000).register(instance);
+        }, 472, 276, 40, 50000).register(instance);
 
         new CustomPowerGen(FNAmpItems.POWER_GENERATORS, FNAmpItems.FN_XPANSION_POWER_R3, FnAssemblyStation.RECIPE_TYPE, new ItemStack[]{
                 FNAmpItems.POWER_COMPONENT, FNAmpItems.FN_XPANSION_POWER_R2, FNAmpItems.POWER_COMPONENT,
                 FNAmpItems.BASIC_MACHINE_BLOCK, new CustomItemStack(LITEX_ITEMSTACK_BRONZE, 3), FNAmpItems.BASIC_MACHINE_BLOCK,
                 SlimefunItems.BASIC_CIRCUIT_BOARD, FNAmpItems.ALUMINUM_PLATING, SlimefunItems.BASIC_CIRCUIT_BOARD
-        }, 944, 552, 60, 300000).register(instance);
+        }, 944, 552, 60, 75000).register(instance);
 
         new CustomPowerGen(FNAmpItems.POWER_GENERATORS, FNAmpItems.FN_XPANSION_POWER_R4, FnAssemblyStation.RECIPE_TYPE, new ItemStack[]{
                 FNAmpItems.POWER_COMPONENT, FNAmpItems.FN_XPANSION_POWER_R3, FNAmpItems.POWER_COMPONENT,
                 FNAmpItems.BASIC_MACHINE_BLOCK, new CustomItemStack(LITEX_ITEMSTACK_DURALUMIN, 6), FNAmpItems.BASIC_MACHINE_BLOCK,
                 SlimefunItems.ADVANCED_CIRCUIT_BOARD, FNAmpItems.GOLD_PLATING, SlimefunItems.ADVANCED_CIRCUIT_BOARD
-        }, 1888, 1104, 120, 400000).register(instance);
+        }, 1888, 1104, 120, 100000).register(instance);
 
         new CustomPowerGen(FNAmpItems.POWER_GENERATORS, FNAmpItems.FN_XPANSION_POWER_R5, FnAssemblyStation.RECIPE_TYPE, new ItemStack[]{
                 FNAmpItems.POWER_COMPONENT, FNAmpItems.FN_XPANSION_POWER_R4, FNAmpItems.POWER_COMPONENT,
